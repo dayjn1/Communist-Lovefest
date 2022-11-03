@@ -1,9 +1,29 @@
 ﻿@{
+/**
+* ---------------------------------------------------------------------------
+* File name: JoinHunt.cs
+* Project name: 404 Industries BucHunt
+* ---------------------------------------------------------------------------
+* Author’s name and email: Dante Hays, haysdc@etsu.edu
+* Creation Date: Oct 27, 2022
+* Last modified: Dante Hays haysdc@etsu.edu Nov 02, 2022
+* ---------------------------------------------------------------------------
+*/
+}
+
+@{
     ViewData["Title"] = "Join A Hunt";
 }
-<h2>@ViewData["Title"]</h2>
-<body>
-    <h3>Enter an invitation code:</h3>
-    <input type="text" id="inviteText" name="inviteText" />
-    <input type="submit" name="inviteSubmit" value="Submit" class="btn btn-success" />
-</body>
+
+<div class="text-center"> <!--Main div for join hunt page-->
+    <h2>@ViewData["Title"]</h2>
+    <body>
+        @using (Html.BeginForm("Index", "Hunt"))
+        {
+            <h3>Enter an invitation code:</h3>
+            @Html.TextBox("Access", "")
+            <br />
+            <input type="submit" value="Join" />
+        }
+    </body>
+</div> <!--End main div for join hunt page-->

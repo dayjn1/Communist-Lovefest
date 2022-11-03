@@ -1,14 +1,30 @@
 ﻿@{
+/**
+* ---------------------------------------------------------------------------
+* File name: Index.cs
+* Project name: 404 Industries BucHunt
+* ---------------------------------------------------------------------------
+* Author’s name and email: Dante Hays, haysdc@etsu.edu
+* Creation Date: Oct 27, 2022
+* Last modified: Dante Hays haysdc@etsu.edu Nov 02, 2022
+* ---------------------------------------------------------------------------
+*/
+}
+
+@{
     ViewData["Title"] = "BucHunt";
 }
 
-<div class="text-center">
-    <h1 class="display-4">BucHunt</h1>
+<div class="text-center"> <!--Main div for home page-->
+    <h2>@ViewData["Title"]</h2>
     <br />
+    <h3>Welcome to BucHunt!</h3>
     <br />
-    <h2 class="display-5">Welcome to BucHunt!</h2>
-    <p>
-        This is the basic webpage for Team 3&#39;s BucHunt implementation.
-    </p>
-</div>
-
+    <div
+        <body>
+            <input type="submit"
+                   value="Join a Hunt"
+                   onclick="location.href='@Url.Action("JoinHunt", "Home")'" />
+        </body>
+    </div>
+</div> <!--End main div for home page-->
