@@ -6,4 +6,18 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Content Remove="wwwroot\Fonts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="wwwroot\Fonts\" />
+    <Folder Include="Views\Hunt\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Views\Hunt\" />
+    <None Remove="EntityFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+  </ItemGroup>
 </Project>
