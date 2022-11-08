@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\janin\\Documents\\GitHub\\Communist-Lovefest\\Team 3 BucHunt\\Team_3_BucHunt_WebApp\\Team_3_BucHunt_WebApp.csproj": {}
+    "C:\\Users\\janin\\Documents\\GitHub\\404-Industries\\Team 3 BucHunt\\Team_3_BucHunt_WebApp\\Team_3_BucHunt_WebApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\janin\\Documents\\GitHub\\Communist-Lovefest\\Team 3 BucHunt\\Team_3_BucHunt_WebApp\\Team_3_BucHunt_WebApp.csproj": {
+    "C:\\Users\\janin\\Documents\\GitHub\\404-Industries\\Team 3 BucHunt\\Team_3_BucHunt_WebApp\\Team_3_BucHunt_WebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\janin\\Documents\\GitHub\\Communist-Lovefest\\Team 3 BucHunt\\Team_3_BucHunt_WebApp\\Team_3_BucHunt_WebApp.csproj",
+        "projectUniqueName": "C:\\Users\\janin\\Documents\\GitHub\\404-Industries\\Team 3 BucHunt\\Team_3_BucHunt_WebApp\\Team_3_BucHunt_WebApp.csproj",
         "projectName": "Team_3_BucHunt_WebApp",
-        "projectPath": "C:\\Users\\janin\\Documents\\GitHub\\Communist-Lovefest\\Team 3 BucHunt\\Team_3_BucHunt_WebApp\\Team_3_BucHunt_WebApp.csproj",
+        "projectPath": "C:\\Users\\janin\\Documents\\GitHub\\404-Industries\\Team 3 BucHunt\\Team_3_BucHunt_WebApp\\Team_3_BucHunt_WebApp.csproj",
         "packagesPath": "C:\\Users\\janin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\janin\\Documents\\GitHub\\Communist-Lovefest\\Team 3 BucHunt\\Team_3_BucHunt_WebApp\\obj\\",
+        "outputPath": "C:\\Users\\janin\\Documents\\GitHub\\404-Industries\\Team 3 BucHunt\\Team_3_BucHunt_WebApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\janin\\AppData\\Roaming\\NuGet\\NuGet.Config",
