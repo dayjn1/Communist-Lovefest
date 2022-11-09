@@ -1,5 +1,12 @@
-﻿var builder = WebApplication.CreateBuilder(args);
+﻿using Team_3_BucHunt_WebApp.Services;
 
+NotificationService ns = new NotificationService();
+
+//ns.SendEmail("dayjn1@etsu.edu", "Testing app emails", "404 Industries - BucHunt testing");
+ns.SendEmail("4233433261@sprintpaging.com", "Testing app emails", "404 Industries - BucHunt testing");
+
+
+var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
