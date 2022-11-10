@@ -1,3 +1,4 @@
+using RestSharp;
 using System.Net;
 using System.Net.Mail;
 
@@ -36,9 +37,17 @@ public class NotificationService
         Client.Send(message);
     }
 
-    public void SendText()
+    public void SendText(string phoneNumber, string body, string carrier)
     {
-        string api = "CyJxZYryWl562ErL81Liwh1tteJqWsyYbAPS6hmPIAtwRsdntRjzYamgzCG4ni8v";
+        MailAddress from = new MailAddress("404IndustriesETSU@gmail.com");
+        MailAddress to = new MailAddress(phoneNumber + carrier);
+
+        MailMessage message = new MailMessage(from, to);
+
+        message.Body = body;
+        message.BodyEncoding = System.Text.Encoding.UTF8;
+        
+        Client.Send(message);
     }
 
 }

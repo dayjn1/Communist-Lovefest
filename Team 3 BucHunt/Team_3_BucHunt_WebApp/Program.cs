@@ -3,7 +3,7 @@
 NotificationService ns = new NotificationService();
 
 //ns.SendEmail("dayjn1@etsu.edu", "Testing app emails", "404 Industries - BucHunt testing");
-ns.SendEmail("4233433261@sprintpaging.com", "Testing app emails", "404 Industries - BucHunt testing");
+ns.SendText("6125981498", "Hello Kinser.", "@vtext.com");
 
 
 var builder = WebApplication.CreateBuilder(args);
