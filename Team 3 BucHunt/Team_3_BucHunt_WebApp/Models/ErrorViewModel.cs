@@ -13,7 +13,7 @@ namespace Team_3_BucHunt_WebApp.Models;
 
 /**
 * Class Name: ErrorViewModel <br>
-* Class Purpose: <br>
+* Class Purpose: Model for errors<br>
 * <hr>
 * Date created: Oct 27, 2022 <br>
 * Date last modified: Nov 02, 2022 
@@ -24,5 +24,6 @@ public class ErrorViewModel
     public string? RequestId { get; set; }
 
     public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
-}
+
+} //End public class ErrorViewModel
 
