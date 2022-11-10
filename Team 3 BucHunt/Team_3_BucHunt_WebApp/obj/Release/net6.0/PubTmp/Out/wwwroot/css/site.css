@@ -1,0 +1,29 @@
+﻿/**
+* ---------------------------------------------------------------------------
+* File name: site.css
+* Project name: 404 Industries BucHunt
+* ---------------------------------------------------------------------------
+* Author’s name and email: East Tennessee State University
+* Creation Date: Nov 01, 2022
+* Last modified: Dante Hays haysdc@etsu.edu Nov 01, 2022
+* ---------------------------------------------------------------------------
+*/
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}

@@ -8,41 +8,41 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Team_3_BucHunt_WebApp
 build_property.RootNamespace = Team_3_BucHunt_WebApp
-build_property.ProjectDir = C:\Users\janin\Documents\GitHub\404-Industries\Team 3 BucHunt\Team_3_BucHunt_WebApp\
+build_property.ProjectDir = /Users/dantehays/Projects/404-Industries/Team 3 BucHunt/Team_3_BucHunt_WebApp/
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\janin\Documents\GitHub\404-Industries\Team 3 BucHunt\Team_3_BucHunt_WebApp
+build_property.MSBuildProjectDirectory = /Users/dantehays/Projects/404-Industries/Team 3 BucHunt/Team_3_BucHunt_WebApp
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/janin/Documents/GitHub/404-Industries/Team 3 BucHunt/Team_3_BucHunt_WebApp/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[/Users/dantehays/Projects/404-Industries/Team 3 BucHunt/Team_3_BucHunt_WebApp/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/janin/Documents/GitHub/404-Industries/Team 3 BucHunt/Team_3_BucHunt_WebApp/Views/Home/JoinHunt.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxKb2luSHVudC5jc2h0bWw=
+[/Users/dantehays/Projects/404-Industries/Team 3 BucHunt/Team_3_BucHunt_WebApp/Views/Home/JoinHunt.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Kb2luSHVudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/janin/Documents/GitHub/404-Industries/Team 3 BucHunt/Team_3_BucHunt_WebApp/Views/Hunt/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSHVudFxJbmRleC5jc2h0bWw=
+[/Users/dantehays/Projects/404-Industries/Team 3 BucHunt/Team_3_BucHunt_WebApp/Views/Hunt/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSHVudC9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/janin/Documents/GitHub/404-Industries/Team 3 BucHunt/Team_3_BucHunt_WebApp/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+[/Users/dantehays/Projects/404-Industries/Team 3 BucHunt/Team_3_BucHunt_WebApp/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/janin/Documents/GitHub/404-Industries/Team 3 BucHunt/Team_3_BucHunt_WebApp/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[/Users/dantehays/Projects/404-Industries/Team 3 BucHunt/Team_3_BucHunt_WebApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/janin/Documents/GitHub/404-Industries/Team 3 BucHunt/Team_3_BucHunt_WebApp/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[/Users/dantehays/Projects/404-Industries/Team 3 BucHunt/Team_3_BucHunt_WebApp/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/janin/Documents/GitHub/404-Industries/Team 3 BucHunt/Team_3_BucHunt_WebApp/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+[/Users/dantehays/Projects/404-Industries/Team 3 BucHunt/Team_3_BucHunt_WebApp/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/janin/Documents/GitHub/404-Industries/Team 3 BucHunt/Team_3_BucHunt_WebApp/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-weqk2uop46
+[/Users/dantehays/Projects/404-Industries/Team 3 BucHunt/Team_3_BucHunt_WebApp/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-to9gj73ssp
