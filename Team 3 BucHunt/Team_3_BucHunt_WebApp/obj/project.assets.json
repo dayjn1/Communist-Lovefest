@@ -3917,19 +3917,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\admin3\\.nuget\\packages\\": {}
+    "C:\\Users\\ethan\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\admin3\\DEV\\404-Industries\\Team 3 BucHunt\\Team_3_BucHunt_WebApp\\Team_3_BucHunt_WebApp.csproj",
+      "projectUniqueName": "C:\\Users\\ethan\\Source\\Repos\\dayjn1\\404-Industries\\Team 3 BucHunt\\Team_3_BucHunt_WebApp\\Team_3_BucHunt_WebApp.csproj",
       "projectName": "Team_3_BucHunt_WebApp",
-      "projectPath": "C:\\Users\\admin3\\DEV\\404-Industries\\Team 3 BucHunt\\Team_3_BucHunt_WebApp\\Team_3_BucHunt_WebApp.csproj",
-      "packagesPath": "C:\\Users\\admin3\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\admin3\\DEV\\404-Industries\\Team 3 BucHunt\\Team_3_BucHunt_WebApp\\obj\\",
+      "projectPath": "C:\\Users\\ethan\\Source\\Repos\\dayjn1\\404-Industries\\Team 3 BucHunt\\Team_3_BucHunt_WebApp\\Team_3_BucHunt_WebApp.csproj",
+      "packagesPath": "C:\\Users\\ethan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ethan\\Source\\Repos\\dayjn1\\404-Industries\\Team 3 BucHunt\\Team_3_BucHunt_WebApp\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\admin3\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ethan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
