@@ -19,18 +19,32 @@ namespace Team_3_BucHunt_WebApp.Controllers;
 
 /**
 * Class Name: HuntController <br>
-* Class Purpose: <br>
+* Class Purpose: Holds the logic for the Hunt page<br>
 * <hr>
 * Date created: Oct 27, 2022 <br>
 * Date last modified: Nov 02, 2022 
 * @author Dante Hays
 */
+
 public class HuntController : Controller
 {
+/**
+* Method Name: Index <br>
+* Method Purpose: Returns the view of the Hunt page <br>
+* <hr>
+* Date created: Oct 27, 2022 <br>
+* Date last modified: Nov 03, 2022 <br>
+* <hr>
+* Notes on specifications, special algorithms, and assumptions: N/A
+* <hr> 
+* @returns View()
+*/
+
     public IActionResult Index()
     {
         return View();
-    }
-}
+    } //End public IActionResult Index()
+
+} //End public class HuntController : Controller
 
 
