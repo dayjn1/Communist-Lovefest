@@ -11,6 +11,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 
 namespace Team_3_BucHunt_WebApp.Models;
 
