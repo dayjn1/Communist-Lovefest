@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Team 3 BucHunt"
+    "\\Team 3 BucHunt",
+    "\\Team 3 BucHunt\\Team_3_BucHunt_WebApp",
+    "\\Team 3 BucHunt\\Team_3_BucHunt_WebApp\\Models"
   ],
-  "SelectedNode": "\\Team 3 BucHunt\\Team_3_BucHunt_WebApp.sln",
+  "SelectedNode": "\\Team 3 BucHunt\\Team_3_BucHunt_WebApp\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
