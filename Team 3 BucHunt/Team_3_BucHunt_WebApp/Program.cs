@@ -1,4 +1,7 @@
-﻿using Team_3_BucHunt_WebApp.Services;
+﻿using Microsoft.EntityFrameworkCore;
+using System.Configuration;
+using Team_3_BucHunt_WebApp.Models;
+using Team_3_BucHunt_WebApp.Services;
 
 NotificationService ns = new NotificationService();
 
@@ -9,6 +12,10 @@ NotificationService ns = new NotificationService();
 var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+/*builder.Services.AddDbContext<BucHuntContext>(options =>
+{
+    options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
+});*/
 
 var app = builder.Build();
 

@@ -28,17 +28,17 @@ namespace Team_3_BucHunt_WebApp.Controllers;
 
 public class HuntController : Controller
 {
-/**
-* Method Name: Index <br>
-* Method Purpose: Returns the view of the Hunt page <br>
-* <hr>
-* Date created: Oct 27, 2022 <br>
-* Date last modified: Nov 03, 2022 <br>
-* <hr>
-* Notes on specifications, special algorithms, and assumptions: N/A
-* <hr> 
-* @returns View()
-*/
+    /**
+    * Method Name: Index <br>
+    * Method Purpose: Returns the view of the Hunt page <br>
+    * <hr>
+    * Date created: Oct 27, 2022 <br>
+    * Date last modified: Nov 03, 2022 <br>
+    * <hr>
+    * Notes on specifications, special algorithms, and assumptions: N/A
+    * <hr> 
+    * @returns View()
+    */
 
     public IActionResult Index()
     {

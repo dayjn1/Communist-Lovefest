@@ -35,3 +35,7 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+*.cache
+*.json
+*.v2
+*.pdb

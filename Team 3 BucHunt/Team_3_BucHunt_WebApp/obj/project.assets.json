@@ -566,6 +566,15 @@
           "lib/netstandard2.0/Mono.TextTemplating.dll": {}
         }
       },
+      "QRCoder/1.4.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/QRCoder.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/QRCoder.dll": {}
+        }
+      },
       "runtime.native.System.Data.SqlClient.sni/4.7.0": {
         "type": "package",
         "dependencies": {
@@ -2067,6 +2076,27 @@
         "lib/netstandard2.0/Mono.TextTemplating.dll",
         "mono.texttemplating.2.2.1.nupkg.sha512",
         "mono.texttemplating.nuspec"
+      ]
+    },
+    "QRCoder/1.4.3": {
+      "sha512": "fWuFqjm8GTlEb2GqBl3Hi8HZZeZQwBSHxvRPtPjyNbT82H0ff0JwavKRBmMaXCno1Av6McPC8aJzri0Mj2w9Jw==",
+      "type": "package",
+      "path": "qrcoder/1.4.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/QRCoder.dll",
+        "lib/net40/QRCoder.dll",
+        "lib/net5.0-windows7.0/QRCoder.dll",
+        "lib/net5.0/QRCoder.dll",
+        "lib/net6.0-windows7.0/QRCoder.dll",
+        "lib/net6.0/QRCoder.dll",
+        "lib/netstandard1.3/QRCoder.dll",
+        "lib/netstandard2.0/QRCoder.dll",
+        "nuget-icon.png",
+        "nuget-readme.md",
+        "qrcoder.1.4.3.nupkg.sha512",
+        "qrcoder.nuspec"
       ]
     },
     "runtime.native.System.Data.SqlClient.sni/4.7.0": {
@@ -3687,26 +3717,24 @@
       "EntityFramework >= 6.4.4",
       "Microsoft.EntityFrameworkCore >= 7.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.0",
-      "Microsoft.EntityFrameworkCore.Tools >= 7.0.0"
+      "Microsoft.EntityFrameworkCore.Tools >= 7.0.0",
+      "QRCoder >= 1.4.3"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\admin3\\.nuget\\packages\\": {}
+    "C:\\Users\\janin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\admin3\\DEV\\404-Industries\\Team 3 BucHunt\\Team_3_BucHunt_WebApp\\Team_3_BucHunt_WebApp.csproj",
+      "projectUniqueName": "C:\\Users\\janin\\Documents\\GitHub\\404-Industries\\Team 3 BucHunt\\Team_3_BucHunt_WebApp\\Team_3_BucHunt_WebApp.csproj",
       "projectName": "Team_3_BucHunt_WebApp",
-      "projectPath": "C:\\Users\\admin3\\DEV\\404-Industries\\Team 3 BucHunt\\Team_3_BucHunt_WebApp\\Team_3_BucHunt_WebApp.csproj",
-      "packagesPath": "C:\\Users\\admin3\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\admin3\\DEV\\404-Industries\\Team 3 BucHunt\\Team_3_BucHunt_WebApp\\obj\\",
+      "projectPath": "C:\\Users\\janin\\Documents\\GitHub\\404-Industries\\Team 3 BucHunt\\Team_3_BucHunt_WebApp\\Team_3_BucHunt_WebApp.csproj",
+      "packagesPath": "C:\\Users\\janin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\janin\\Documents\\GitHub\\404-Industries\\Team 3 BucHunt\\Team_3_BucHunt_WebApp\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\admin3\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\janin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3749,6 +3777,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[7.0.0, )"
+          },
+          "QRCoder": {
+            "target": "Package",
+            "version": "[1.4.3, )"
           }
         },
         "imports": [
