@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "lMMcNLlAaV8/0drAp/9PPHK8GakkO2vt+9ouIVmfgygFY0pJKZu/crnkRYQO8OcbzQt45agOHtV9mLnKnYL1HA==",
+  "dgSpecHash": "Hk77oQlOhuVAB5v9D1OnatBc/Gs1Dw/zK8Qjj2VKwkE3dSjxpW9s/P/00LcQCa64bwEAPPjckRKu27fT756RZQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\janin\\Documents\\GitHub\\404-Industries\\Team 3 BucHunt\\Team_3_BucHunt_WebApp\\Team_3_BucHunt_WebApp.csproj",
   "expectedPackageFiles": [
@@ -43,6 +43,7 @@
     "C:\\Users\\janin\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\janin\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
     "C:\\Users\\janin\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\janin\\.nuget\\packages\\qrcoder\\1.4.3\\qrcoder.1.4.3.nupkg.sha512",
     "C:\\Users\\janin\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
     "C:\\Users\\janin\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\janin\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
