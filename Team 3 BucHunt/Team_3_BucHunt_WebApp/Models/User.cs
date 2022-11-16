@@ -11,6 +11,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Data.SqlClient;
 
 namespace Team_3_BucHunt_WebApp.Models;
@@ -23,7 +24,7 @@ namespace Team_3_BucHunt_WebApp.Models;
 * Date last modified: Nov 10, 2022 
 * @author Dante Hays
 */
-public partial class User
+public class User
 {
     public int UserId { get; set; }
 
@@ -31,6 +32,8 @@ public partial class User
 
     public string PhoneNum { get; set; } = null!; //char
 
+    
+    [Required]
     public string? AccessCode { get; set; }
 
     public int? HuntId { get; set; }
@@ -44,6 +47,7 @@ public partial class User
     SqlDataReader dataReader;
     String sql = "";
     string connectionString = " ";
+
     public List<User> usersList = new List<User>(); //Individual person list
 
     public List<User> teamList = new List<User>(); //Team list
@@ -99,5 +103,11 @@ public partial class User
         AccessCode = code;
 
         HuntId = huntId;
+    }
+
+
+    public List<User> GetList()
+    {
+        return usersList;
     }
 } //End public partial class User

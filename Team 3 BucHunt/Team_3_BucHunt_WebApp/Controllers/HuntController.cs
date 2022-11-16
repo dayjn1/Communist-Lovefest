@@ -14,6 +14,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Team_3_BucHunt_WebApp.Models;
 
 namespace Team_3_BucHunt_WebApp.Controllers;
 
@@ -28,7 +29,13 @@ namespace Team_3_BucHunt_WebApp.Controllers;
 
 public class HuntController : Controller
 {
-/**
+    public Models.User user = new Models.User();
+    public Models.Task task = new Models.Task();
+    private BucHuntContext db = new BucHuntContext();
+
+    
+
+    /**
 * Method Name: Index <br>
 * Method Purpose: Returns the view of the Hunt page <br>
 * <hr>
@@ -40,11 +47,35 @@ public class HuntController : Controller
 * @returns View()
 */
 
-    public IActionResult Index()
-    {
-        return View();
-    } //End public IActionResult Index()
 
+    [HttpPost]
+    public IActionResult Index(User user)
+    {
+        user.OpenDB(); //Generates the list of Users from the database
+        task.OpenDB(); //Generates the list of Tasks rom the database
+        bool correct = false;
+        
+        
+        foreach (Models.User u in user.usersList)
+        {
+            if (user.AccessCode == u.AccessCode)
+            {
+                correct = true;
+                break;
+            }
+        }
+
+        
+        if(correct)
+        {
+            return View();
+        }
+        else
+        {
+            //Try and put a error message here
+            return RedirectToAction("JoinHunt", "Home");
+        }
+    } //End public IActionResult Index()
 } //End public class HuntController : Controller
 
 

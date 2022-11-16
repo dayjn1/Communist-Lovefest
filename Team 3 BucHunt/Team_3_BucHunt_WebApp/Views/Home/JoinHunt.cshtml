@@ -1,14 +1,19 @@
-﻿@{
-/**
-* ---------------------------------------------------------------------------
-* File name: JoinHunt.cs
-* Project name: 404 Industries BucHunt
-* ---------------------------------------------------------------------------
-* Author’s name and email: Dante Hays, haysdc@etsu.edu
-* Creation Date: Oct 27, 2022
-* Last modified: Dante Hays haysdc@etsu.edu Nov 02, 2022
-* ---------------------------------------------------------------------------
+﻿@model User
+@{
+    /**
+            * ---------------------------------------------------------------------------
+            * File name: JoinHunt.cs
+            * Project name: 404 Industries BucHunt
+            * ---------------------------------------------------------------------------
+            * Author’s name and email: Dante Hays, haysdc@etsu.edu
+            * Creation Date: Oct 27, 2022
+            * Last modified: Dante Hays haysdc@etsu.edu Nov 02, 2022
+            * ---------------------------------------------------------------------------
 */
+
+    var message = "";
+    
+
 }
 
 @{
@@ -18,10 +23,10 @@
 <div class="text-center"> <!--Main div for JoinHunt page-->
     <h2>@ViewData["Title"]</h2>
     <body>
-        @using (Html.BeginForm("Index", "Hunt"))
+        @using (Html.BeginForm("Index", "Hunt", FormMethod.Post))
         {
             <h3>Enter an invitation code:</h3>
-            @Html.TextBox("Access", "")
+            @Html.TextBoxFor(user => user.AccessCode)
             <br />
             <input type="submit" value="Join" />
         }
