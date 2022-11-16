@@ -296,7 +296,6 @@ C:\Users\drd14\Source\Repos\404-Industries\Team 3 BucHunt\Team_3_BucHunt_WebApp\
 C:\Users\drd14\Source\Repos\404-Industries\Team 3 BucHunt\Team_3_BucHunt_WebApp\bin\Debug\net6.0\Team_3_BucHunt_WebApp.deps.json
 C:\Users\drd14\Source\Repos\404-Industries\Team 3 BucHunt\Team_3_BucHunt_WebApp\bin\Debug\net6.0\Team_3_BucHunt_WebApp.runtimeconfig.json
 C:\Users\drd14\Source\Repos\404-Industries\Team 3 BucHunt\Team_3_BucHunt_WebApp\bin\Debug\net6.0\Team_3_BucHunt_WebApp.dll
-C:\Users\drd14\Source\Repos\404-Industries\Team 3 BucHunt\Team_3_BucHunt_WebApp\bin\Debug\net6.0\ref\Team_3_BucHunt_WebApp.dll
 C:\Users\drd14\Source\Repos\404-Industries\Team 3 BucHunt\Team_3_BucHunt_WebApp\bin\Debug\net6.0\Team_3_BucHunt_WebApp.pdb
 C:\Users\drd14\Source\Repos\404-Industries\Team 3 BucHunt\Team_3_BucHunt_WebApp\bin\Debug\net6.0\Azure.Core.dll
 C:\Users\drd14\Source\Repos\404-Industries\Team 3 BucHunt\Team_3_BucHunt_WebApp\bin\Debug\net6.0\Azure.Identity.dll
@@ -585,3 +584,9 @@ C:\Users\drd14\Source\Repos\404-Industries\Team 3 BucHunt\Team_3_BucHunt_WebApp\
 C:\Users\drd14\Source\Repos\404-Industries\Team 3 BucHunt\Team_3_BucHunt_WebApp\obj\Debug\net6.0\ref\Team_3_BucHunt_WebApp.dll
 C:\Users\drd14\Source\Repos\404-Industries\Team 3 BucHunt\Team_3_BucHunt_WebApp\obj\Debug\net6.0\Team_3_BucHunt_WebApp.pdb
 C:\Users\drd14\Source\Repos\404-Industries\Team 3 BucHunt\Team_3_BucHunt_WebApp\obj\Debug\net6.0\Team_3_BucHunt_WebApp.genruntimeconfig.cache
+C:\Users\drd14\Source\Repos\404-Industries\Team 3 BucHunt\Team_3_BucHunt_WebApp\obj\Debug\net6.0\staticwebassets\msbuild.Team_3_BucHunt_WebApp.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\drd14\Source\Repos\404-Industries\Team 3 BucHunt\Team_3_BucHunt_WebApp\obj\Debug\net6.0\staticwebassets\msbuild.build.Team_3_BucHunt_WebApp.props
+C:\Users\drd14\Source\Repos\404-Industries\Team 3 BucHunt\Team_3_BucHunt_WebApp\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Team_3_BucHunt_WebApp.props
+C:\Users\drd14\Source\Repos\404-Industries\Team 3 BucHunt\Team_3_BucHunt_WebApp\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Team_3_BucHunt_WebApp.props
+C:\Users\drd14\Source\Repos\404-Industries\Team 3 BucHunt\Team_3_BucHunt_WebApp\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\drd14\Source\Repos\404-Industries\Team 3 BucHunt\Team_3_BucHunt_WebApp\obj\Debug\net6.0\refint\Team_3_BucHunt_WebApp.dll

@@ -3,8 +3,9 @@
     "",
     "\\Team 3 BucHunt",
     "\\Team 3 BucHunt\\Team_3_BucHunt_WebApp",
-    "\\Team 3 BucHunt\\Team_3_BucHunt_WebApp\\Models"
+    "\\Team 3 BucHunt\\Team_3_BucHunt_WebApp\\Views",
+    "\\Team 3 BucHunt\\Team_3_BucHunt_WebApp\\Views\\Hunt"
   ],
-  "SelectedNode": "\\Team 3 BucHunt\\Team_3_BucHunt_WebApp\\Program.cs",
+  "SelectedNode": "\\Team 3 BucHunt\\Team_3_BucHunt_WebApp\\Views\\Hunt\\LeaderBoard.cshtml",
   "PreviewInSolutionExplorer": false
 }
