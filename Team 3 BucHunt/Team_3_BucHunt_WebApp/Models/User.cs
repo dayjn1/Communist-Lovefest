@@ -10,9 +10,11 @@
 */
 
 using System;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Data.SqlClient;
+using Microsoft.EntityFrameworkCore.SqlServer;
 
 namespace Team_3_BucHunt_WebApp.Models;
 

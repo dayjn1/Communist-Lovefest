@@ -35,6 +35,12 @@ public class HuntController : Controller
     //List<User> teams = new List<User>();
     //List<List<User>> teamList = new List<List<User>>();
 
+    private readonly BucHuntContext _context;
+
+    public HuntController(BucHuntContext context)
+    {
+        _context = context;
+    }
 
     /**
 * Method Name: Index <br>
@@ -53,8 +59,6 @@ public class HuntController : Controller
     {
         return View();
     }
-
-
 
 
     /// <summary>
@@ -82,6 +86,7 @@ public class HuntController : Controller
         }
         if (correct)
         {
+            List<Models.Task> taskList = _context.Tasks.ToList();
             return View();
         }
         else
