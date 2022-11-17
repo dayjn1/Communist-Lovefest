@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "oEQupOeQ4Tlu48aSwP0F15yT2kmVJ3ZYpQUGAHnZePA=",
+  "Hash": "0Ra6m6Zmfi+nzbQkyBCVvekT88YIbZwScXRpo1rcOjM=",
   "Source": "Team_3_BucHunt_WebApp",
   "BasePath": "_content/Team_3_BucHunt_WebApp",
   "Mode": "Default",
@@ -100,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\janin\\Documents\\GitHub\\404-Industries\\Team 3 BucHunt\\Team_3_BucHunt_WebApp\\wwwroot\\css\\TaskListStyle.css",
+      "SourceId": "Team_3_BucHunt_WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\janin\\Documents\\GitHub\\404-Industries\\Team 3 BucHunt\\Team_3_BucHunt_WebApp\\wwwroot\\",
+      "BasePath": "_content/Team_3_BucHunt_WebApp",
+      "RelativePath": "css/TaskListStyle.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\TaskListStyle.css"
     },
     {
       "Identity": "C:\\Users\\janin\\Documents\\GitHub\\404-Industries\\Team 3 BucHunt\\Team_3_BucHunt_WebApp\\wwwroot\\favicon.ico",

@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\css\\ETSUStyle.css"
     },
     {
+      "Id": "C:\\Users\\janin\\Documents\\GitHub\\404-Industries\\Team 3 BucHunt\\Team_3_BucHunt_WebApp\\wwwroot\\css\\TaskListStyle.css",
+      "PackagePath": "staticwebassets\\css\\TaskListStyle.css"
+    },
+    {
       "Id": "C:\\Users\\janin\\Documents\\GitHub\\404-Industries\\Team 3 BucHunt\\Team_3_BucHunt_WebApp\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
