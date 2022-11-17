@@ -1,5 +1,11 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿//all of these are probably not needed, I will weed through them later -Hannah
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Design;
 using System.Configuration;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using Team_3_BucHunt_WebApp.Models;
 using Team_3_BucHunt_WebApp.Services;
 
@@ -10,12 +16,14 @@ NotificationService ns = new NotificationService();
 
 
 var builder = WebApplication.CreateBuilder(args);
+var connString = builder.Configuration.GetConnectionString("DefaultConnection");
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-/*builder.Services.AddDbContext<BucHuntContext>(options =>
+builder.Services.AddDbContext<BucHuntContext>(options =>
 {
-    options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
-});*/
+    options.UseSqlServer(connString);
+});
+
 
 var app = builder.Build();
 
