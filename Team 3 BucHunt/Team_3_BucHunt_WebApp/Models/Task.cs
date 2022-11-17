@@ -40,10 +40,10 @@ public partial class Task
 
     public List<Task> tasksList = new List<Task>();
 
-    /// <summary>
-    ///  Establishes connection to the database
-    ///  Generates a list of Tasks from the tasks stored on the database.
-    /// </summary>
+    // <summary>
+    //  Establishes connection to the database
+    //  Generates a list of Tasks from the tasks stored on the database.
+    // </summary>
     public void OpenDB()
     {
         connectionString = @"Server=FALL22-4250-1-3; Database=BucHunt; User Id=dbaccess; Password=Password1!";

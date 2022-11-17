@@ -27,7 +27,9 @@ namespace Team_3_BucHunt_WebApp.Controllers;
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
+
     private readonly BucHuntContext _context;
+
 
     public HomeController(ILogger<HomeController> logger, BucHuntContext context)
     {
@@ -48,10 +50,7 @@ public class HomeController : Controller
 */
     public IActionResult Index()
     {
-        Models.User user = new Models.User();
-        Models.Task task = new Models.Task();
-        user.OpenDB(); //Generates the list of Users from the database
-        task.OpenDB(); //Generates the list of Tasks rom the database
+        
         return View();
     } //End public IActionResult Index()
 
@@ -68,7 +67,7 @@ public class HomeController : Controller
 */
     public IActionResult JoinHunt()
     {
-        return View();
+       return View();
     } //End public IActionResult JoinHunt()
 
 /**

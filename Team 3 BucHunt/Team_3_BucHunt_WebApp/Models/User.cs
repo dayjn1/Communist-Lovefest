@@ -11,6 +11,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Data.SqlClient;
 
 namespace Team_3_BucHunt_WebApp.Models;
@@ -23,15 +24,18 @@ namespace Team_3_BucHunt_WebApp.Models;
 * Date last modified: Nov 10, 2022 
 * @author Dante Hays
 */
-public partial class User
+public class User
 {
     public int UserId { get; set; }
 
     public string Email { get; set; } = null!;
 
+    
     public string PhoneNum { get; set; } = null!; //char
 
-    public string? AccessCode { get; set; }
+    
+    [Required(ErrorMessage = "AccessCode is Required"), MaxLength(8)]
+    public string AccessCode { get; set; }
 
     public int? HuntId { get; set; }
 
@@ -39,20 +43,21 @@ public partial class User
 
     public virtual ICollection<Hunt> Hunts { get; } = new List<Hunt>();
 
-  
+
     SqlCommand command;
     SqlDataReader dataReader;
     String sql = "";
     string connectionString = " ";
+
     public List<User> usersList = new List<User>(); //Individual person list
 
     public List<User> teamList = new List<User>(); //Team list
 
 
-    /// <summary>
-    /// Method to open and establish connection to the database
-    /// Will generate a list of Users stored on the database
-    /// </summary>
+    // <summary>
+    // Method to open and establish connection to the database
+    // Will generate a list of Users stored on the database
+    // </summary>
     public void OpenDB()
     {
         connectionString = @"Server=FALL22-4250-1-3; Database=BucHunt; User Id=dbaccess; Password=Password1!";
@@ -99,5 +104,11 @@ public partial class User
         AccessCode = code;
 
         HuntId = huntId;
+    }
+
+
+    public List<User> GetList()
+    {
+        return usersList;
     }
 } //End public partial class User
