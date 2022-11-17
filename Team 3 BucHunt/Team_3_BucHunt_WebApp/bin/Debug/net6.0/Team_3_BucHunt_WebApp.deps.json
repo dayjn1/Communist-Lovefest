@@ -11,7 +11,8 @@
           "EntityFramework": "6.4.4",
           "Microsoft.EntityFrameworkCore": "7.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.0",
-          "Microsoft.EntityFrameworkCore.Tools": "7.0.0"
+          "Microsoft.EntityFrameworkCore.Tools": "7.0.0",
+          "QRCoder": "1.4.3"
         },
         "runtime": {
           "Team_3_BucHunt_WebApp.dll": {}
@@ -465,6 +466,14 @@
           "lib/netstandard2.0/Mono.TextTemplating.dll": {
             "assemblyVersion": "2.2.0.0",
             "fileVersion": "2.2.1.1"
+          }
+        }
+      },
+      "QRCoder/1.4.3": {
+        "runtime": {
+          "lib/net6.0/QRCoder.dll": {
+            "assemblyVersion": "1.4.3.0",
+            "fileVersion": "1.4.3.0"
           }
         }
       },
@@ -1061,6 +1070,13 @@
       "sha512": "sha512-KZYeKBET/2Z0gY1WlTAK7+RHTl7GSbtvTLDXEZZojUdAPqpQNDL6tHv7VUpqfX5VEOh+uRGKaZXkuD253nEOBQ==",
       "path": "mono.texttemplating/2.2.1",
       "hashPath": "mono.texttemplating.2.2.1.nupkg.sha512"
+    },
+    "QRCoder/1.4.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fWuFqjm8GTlEb2GqBl3Hi8HZZeZQwBSHxvRPtPjyNbT82H0ff0JwavKRBmMaXCno1Av6McPC8aJzri0Mj2w9Jw==",
+      "path": "qrcoder/1.4.3",
+      "hashPath": "qrcoder.1.4.3.nupkg.sha512"
     },
     "runtime.native.System.Data.SqlClient.sni/4.7.0": {
       "type": "package",

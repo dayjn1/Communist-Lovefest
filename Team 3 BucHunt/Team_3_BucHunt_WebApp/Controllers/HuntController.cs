@@ -55,13 +55,17 @@ public class HuntController : Controller
     }
 
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> dev
     /// <summary>
     /// Returns Hunt page if code is correct will redirect if incorrect and will display invalid code.
     /// </summary>
     /// <param name="user"></param>
     /// <returns></returns>
+<<<<<<< HEAD
     [HttpPost]
     public IActionResult Index(User user)
     {
@@ -94,3 +98,35 @@ public class HuntController : Controller
 } //End public class HuntController : Controller
 
 
+=======
+    //[HttpPost]
+    //public IActionResult Index(User user)
+    //{
+    //    user.OpenDB(); //Generates the list of Users from the database
+    //    task.OpenDB(); //Generates the list of Tasks from the database
+    //    bool correct = false;
+
+
+
+    //    foreach (User u in user.usersList)
+    //    {
+    //        if (user.AccessCode == u.AccessCode)
+    //        {
+
+    //            correct = true;
+    //            break;
+    //        }
+    //    }
+    //    if (correct)
+    //    {
+    //        return View();
+    //    }
+    //    else
+    //    {
+
+    //        TempData["Message"] = "Invalid Code";
+    //        return RedirectToAction("JoinHunt", "Home");
+    //    }
+    } //End public IActionResult Index()
+//} //End public class HuntController : Controller
+>>>>>>> dev
