@@ -86,6 +86,7 @@ public class HuntController : Controller
         if (correct)
         {
             List<Models.Task> taskList = _context.Tasks.ToList();
+            ViewBag.taskList = taskList;
             return View();
         }
         else
@@ -108,7 +109,7 @@ public class HuntController : Controller
 * @returns View()
 */
     public IActionResult LeaderBoard()
-    {
+    { 
         return View();
     }   //End public IActionResult LeaderBoard()
 
