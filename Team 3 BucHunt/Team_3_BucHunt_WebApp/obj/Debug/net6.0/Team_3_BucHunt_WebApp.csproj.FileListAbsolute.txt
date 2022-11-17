@@ -301,8 +301,6 @@ C:\Users\janin\Documents\GitHub\404-Industries\Team 3 BucHunt\Team_3_BucHunt_Web
 C:\Users\janin\Documents\GitHub\404-Industries\Team 3 BucHunt\Team_3_BucHunt_WebApp\obj\Debug\net6.0\Team_3_BucHunt_WebApp.dll
 C:\Users\janin\Documents\GitHub\404-Industries\Team 3 BucHunt\Team_3_BucHunt_WebApp\obj\Debug\net6.0\refint\Team_3_BucHunt_WebApp.dll
 C:\Users\janin\Documents\GitHub\404-Industries\Team 3 BucHunt\Team_3_BucHunt_WebApp\obj\Debug\net6.0\Team_3_BucHunt_WebApp.pdb
-C:\Users\janin\Documents\GitHub\404-Industries\Team 3 BucHunt\Team_3_BucHunt_WebApp\bin\Debug\net6.0\appsettings.Development.json
-C:\Users\janin\Documents\GitHub\404-Industries\Team 3 BucHunt\Team_3_BucHunt_WebApp\bin\Debug\net6.0\appsettings.json
 C:\Users\janin\Documents\GitHub\404-Industries\Team 3 BucHunt\Team_3_BucHunt_WebApp\bin\Debug\net6.0\Team_3_BucHunt_WebApp.staticwebassets.runtime.json
 C:\Users\janin\Documents\GitHub\404-Industries\Team 3 BucHunt\Team_3_BucHunt_WebApp\bin\Debug\net6.0\Team_3_BucHunt_WebApp.exe
 C:\Users\janin\Documents\GitHub\404-Industries\Team 3 BucHunt\Team_3_BucHunt_WebApp\bin\Debug\net6.0\Team_3_BucHunt_WebApp.deps.json
