@@ -27,22 +27,24 @@ namespace Team_3_BucHunt_WebApp.Controllers;
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
+    private readonly BucHuntContext _context;
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(ILogger<HomeController> logger, BucHuntContext context)
     {
         _logger = logger;
+        _context = context;
     } //End public HomeController(ILogger<HomeController> logger)
 
-/**
-* Method Name: Index <br>
-* Method Purpose: Returns the view of the Home page <br>
-* <hr>
-* Date created: Oct 27, 2022 <br>
-* Date last modified: Nov 03, 2022 <br>
-* <hr>
-* Notes on specifications, special algorithms, and assumptions: N/A
-* <hr> 
-* @returns View()
+    /**
+    * Method Name: Index <br>
+    * Method Purpose: Returns the view of the Home page <br>
+    * <hr>
+    * Date created: Oct 27, 2022 <br>
+    * Date last modified: Nov 03, 2022 <br>
+    * <hr>
+    * Notes on specifications, special algorithms, and assumptions: N/A
+    * <hr> 
+    * @returns View()
 */
     public IActionResult Index()
     {
