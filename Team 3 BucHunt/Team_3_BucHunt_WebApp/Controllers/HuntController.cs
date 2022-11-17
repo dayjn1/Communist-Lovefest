@@ -78,6 +78,7 @@ public class HuntController : Controller
         }
         if (correct)
         {
+            ViewBag.taskList = task.tasksList;
             return View();
         }
         else
@@ -100,7 +101,7 @@ public class HuntController : Controller
 * @returns View()
 */
     public IActionResult LeaderBoard()
-    {
+    { 
         return View();
     }   //End public IActionResult LeaderBoard()
 

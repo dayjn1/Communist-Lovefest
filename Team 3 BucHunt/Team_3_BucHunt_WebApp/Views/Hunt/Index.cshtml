@@ -11,13 +11,11 @@
 */
 }
 
-@{
-    ViewData["Title"] = "Database results:";
-}
 
 <div class="text-center"><!--The main div for the Hunt page-->
-    <h2>@ViewData["Title"]</h2>
         <body>
+            @{ Html.RenderPartial("_NavBar");}
+            @{ Html.RenderPartial("_TaskList");}
             <input type="submit"
                    value="Leader Board"
                    onclick="location.href='@Url.Action("LeaderBoard", "Hunt")'" />
