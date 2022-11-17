@@ -35,18 +35,25 @@ public class HuntController : Controller
     //List<User> teams = new List<User>();
     //List<List<User>> teamList = new List<List<User>>();
 
+    private readonly BucHuntContext _context;
+
+    public HuntController(BucHuntContext context)
+    {
+        _context = context;
+    }
 
     /**
-    * Method Name: Index <br>
-    * Method Purpose: Returns the view of the Hunt page <br>
-    * <hr>
-    * Date created: Oct 27, 2022 <br>
-    * Date last modified: Nov 03, 2022 <br>
-    * <hr>
-    * Notes on specifications, special algorithms, and assumptions: N/A
-    * <hr> 
-    * @returns View()
-    */
+* Method Name: Index <br>
+* Method Purpose: Returns the view of the Hunt page <br>
+* <hr>
+* Date created: Oct 27, 2022 <br>
+* Date last modified: Nov 03, 2022 <br>
+* <hr>
+* Notes on specifications, special algorithms, and assumptions: N/A
+* <hr> 
+* @returns View()
+*/
+
     [HttpGet]
     public ActionResult Index()
     {
@@ -78,7 +85,8 @@ public class HuntController : Controller
         }
         if (correct)
         {
-            ViewBag.taskList = task.tasksList;
+            List<Models.Task> taskList = _context.Tasks.ToList();
+            ViewBag.taskList = taskList;
             return View();
         }
         else
