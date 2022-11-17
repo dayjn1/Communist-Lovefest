@@ -87,4 +87,23 @@ public class HuntController : Controller
             return RedirectToAction("JoinHunt", "Home");
         }
     } //End public IActionResult Index()
+
+/**
+* Method Name: LeaderBoard <br>
+* Method Purpose: Returns the view of the Hunt page <br>
+* <hr>
+* Date created: Nov 15, 2022 <br>
+* Date last modified: Nov 15, 2022 <br>
+* <hr>
+* Notes on specifications, special algorithms, and assumptions: N/A
+* <hr> 
+* @returns View()
+*/
+    public IActionResult LeaderBoard()
+    {
+        return View();
+    }   //End public IActionResult LeaderBoard()
+
 } //End public class HuntController : Controller
+
+
