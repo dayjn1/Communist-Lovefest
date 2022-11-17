@@ -37,35 +37,27 @@ public class HuntController : Controller
 
 
     /**
-* Method Name: Index <br>
-* Method Purpose: Returns the view of the Hunt page <br>
-* <hr>
-* Date created: Oct 27, 2022 <br>
-* Date last modified: Nov 03, 2022 <br>
-* <hr>
-* Notes on specifications, special algorithms, and assumptions: N/A
-* <hr> 
-* @returns View()
-*/
-
+    * Method Name: Index <br>
+    * Method Purpose: Returns the view of the Hunt page <br>
+    * <hr>
+    * Date created: Oct 27, 2022 <br>
+    * Date last modified: Nov 03, 2022 <br>
+    * <hr>
+    * Notes on specifications, special algorithms, and assumptions: N/A
+    * <hr> 
+    * @returns View()
+    */
     [HttpGet]
     public ActionResult Index()
     {
         return View();
     }
 
-
-<<<<<<< HEAD
-
-
-=======
->>>>>>> dev
     /// <summary>
     /// Returns Hunt page if code is correct will redirect if incorrect and will display invalid code.
     /// </summary>
     /// <param name="user"></param>
     /// <returns></returns>
-<<<<<<< HEAD
     [HttpPost]
     public IActionResult Index(User user)
     {
@@ -96,37 +88,3 @@ public class HuntController : Controller
         }
     } //End public IActionResult Index()
 } //End public class HuntController : Controller
-
-
-=======
-    //[HttpPost]
-    //public IActionResult Index(User user)
-    //{
-    //    user.OpenDB(); //Generates the list of Users from the database
-    //    task.OpenDB(); //Generates the list of Tasks from the database
-    //    bool correct = false;
-
-
-
-    //    foreach (User u in user.usersList)
-    //    {
-    //        if (user.AccessCode == u.AccessCode)
-    //        {
-
-    //            correct = true;
-    //            break;
-    //        }
-    //    }
-    //    if (correct)
-    //    {
-    //        return View();
-    //    }
-    //    else
-    //    {
-
-    //        TempData["Message"] = "Invalid Code";
-    //        return RedirectToAction("JoinHunt", "Home");
-    //    }
-    } //End public IActionResult Index()
-//} //End public class HuntController : Controller
->>>>>>> dev
