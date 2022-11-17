@@ -80,7 +80,7 @@ public class User
 
     /// <summary>
     ///  Base constructor for the User class
-    /// </summary>
+    /// </summary> 
     public User()
     {
 

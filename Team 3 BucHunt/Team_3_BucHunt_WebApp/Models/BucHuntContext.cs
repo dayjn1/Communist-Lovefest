@@ -12,6 +12,7 @@
 using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
+using Team_3_BucHunt_WebApp.Models;
 
 namespace Team_3_BucHunt_WebApp.Models;
 
@@ -157,4 +158,6 @@ public partial class BucHuntContext : DbContext
     }
 
     partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
+
+    public DbSet<Team_3_BucHunt_WebApp.Models.QRCodeModel> QRCodeModel { get; set; }
 }

@@ -9,41 +9,57 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Team_3_BucHunt_WebApp
 build_property.RootNamespace = Team_3_BucHunt_WebApp
-build_property.ProjectDir = C:\Users\Hannah Taylor\Documents\GitHub\404-Industries\Team 3 BucHunt\Team_3_BucHunt_WebApp\
+build_property.ProjectDir = C:\Users\janin\Documents\GitHub\404-Industries\Team 3 BucHunt\Team_3_BucHunt_WebApp\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Hannah Taylor\Documents\GitHub\404-Industries\Team 3 BucHunt\Team_3_BucHunt_WebApp
+build_property.MSBuildProjectDirectory = C:\Users\janin\Documents\GitHub\404-Industries\Team 3 BucHunt\Team_3_BucHunt_WebApp
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Hannah Taylor/Documents/GitHub/404-Industries/Team 3 BucHunt/Team_3_BucHunt_WebApp/Views/Home/Index.cshtml]
+[C:/Users/janin/Documents/GitHub/404-Industries/Team 3 BucHunt/Team_3_BucHunt_WebApp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hannah Taylor/Documents/GitHub/404-Industries/Team 3 BucHunt/Team_3_BucHunt_WebApp/Views/Home/JoinHunt.cshtml]
+[C:/Users/janin/Documents/GitHub/404-Industries/Team 3 BucHunt/Team_3_BucHunt_WebApp/Views/Home/JoinHunt.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxKb2luSHVudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hannah Taylor/Documents/GitHub/404-Industries/Team 3 BucHunt/Team_3_BucHunt_WebApp/Views/Hunt/Index.cshtml]
+[C:/Users/janin/Documents/GitHub/404-Industries/Team 3 BucHunt/Team_3_BucHunt_WebApp/Views/Hunt/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSHVudFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hannah Taylor/Documents/GitHub/404-Industries/Team 3 BucHunt/Team_3_BucHunt_WebApp/Views/Shared/Error.cshtml]
+[C:/Users/janin/Documents/GitHub/404-Industries/Team 3 BucHunt/Team_3_BucHunt_WebApp/Views/Hunt/LeaderBoard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSHVudFxMZWFkZXJCb2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/janin/Documents/GitHub/404-Industries/Team 3 BucHunt/Team_3_BucHunt_WebApp/Views/QR/CreateQRCode.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUVJcQ3JlYXRlUVJDb2RlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/janin/Documents/GitHub/404-Industries/Team 3 BucHunt/Team_3_BucHunt_WebApp/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hannah Taylor/Documents/GitHub/404-Industries/Team 3 BucHunt/Team_3_BucHunt_WebApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/janin/Documents/GitHub/404-Industries/Team 3 BucHunt/Team_3_BucHunt_WebApp/Views/Shared/_TaskAnswerForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9UYXNrQW5zd2VyRm9ybS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/janin/Documents/GitHub/404-Industries/Team 3 BucHunt/Team_3_BucHunt_WebApp/Views/Shared/_TaskList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9UYXNrTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/janin/Documents/GitHub/404-Industries/Team 3 BucHunt/Team_3_BucHunt_WebApp/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hannah Taylor/Documents/GitHub/404-Industries/Team 3 BucHunt/Team_3_BucHunt_WebApp/Views/_ViewImports.cshtml]
+[C:/Users/janin/Documents/GitHub/404-Industries/Team 3 BucHunt/Team_3_BucHunt_WebApp/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hannah Taylor/Documents/GitHub/404-Industries/Team 3 BucHunt/Team_3_BucHunt_WebApp/Views/_ViewStart.cshtml]
+[C:/Users/janin/Documents/GitHub/404-Industries/Team 3 BucHunt/Team_3_BucHunt_WebApp/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hannah Taylor/Documents/GitHub/404-Industries/Team 3 BucHunt/Team_3_BucHunt_WebApp/Views/Shared/_Layout.cshtml]
+[C:/Users/janin/Documents/GitHub/404-Industries/Team 3 BucHunt/Team_3_BucHunt_WebApp/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-weqk2uop46
