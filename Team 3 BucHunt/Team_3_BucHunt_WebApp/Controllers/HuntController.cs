@@ -33,7 +33,7 @@ public class HuntController : Controller
     public Models.Task task = new Models.Task();
     private BucHuntContext db = new BucHuntContext();
 
-    
+
 
     /**
 * Method Name: Index <br>
@@ -47,16 +47,25 @@ public class HuntController : Controller
 * @returns View()
 */
 
+    [HttpGet]
+    public ActionResult Index()
+    {
+        return View();
+    }
+
+
+
+
 
     [HttpPost]
     public IActionResult Index(User user)
     {
         user.OpenDB(); //Generates the list of Users from the database
-        task.OpenDB(); //Generates the list of Tasks rom the database
+        task.OpenDB(); //Generates the list of Tasks from the database
         bool correct = false;
-        
-        
-        foreach (Models.User u in user.usersList)
+
+
+        foreach (User u in user.usersList)
         {
             if (user.AccessCode == u.AccessCode)
             {
@@ -64,15 +73,14 @@ public class HuntController : Controller
                 break;
             }
         }
-
-        
-        if(correct)
+        if (correct)
         {
             return View();
         }
         else
         {
-            //Try and put a error message here
+
+            TempData["Message"] = "Invalid Code";
             return RedirectToAction("JoinHunt", "Home");
         }
     } //End public IActionResult Index()
