@@ -38,3 +38,6 @@ Thumbs.db
 Team 3 BucHunt/.vs/Team_3_BucHunt_WebApp/v17/.suo
 *.pdb
 *.cache
+*.vsidx
+*.editorconfig
+*.json
