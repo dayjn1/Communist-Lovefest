@@ -15,12 +15,14 @@
     ViewData["Title"] = "LeaderBoard";
 }
 <div class="text-center">
+    @{ Html.RenderPartial("_NavBar");}
+
     <h2>@ViewData["Title"]</h2>
-    
+
 
     <table style="margin-left: auto; margin-right: auto;">
         <tr>
-            
+
             <th>
                 <b>Rank</b>
             </th>
@@ -70,7 +72,7 @@
 
     </table>
 
-    
+
 
 
 </div>
