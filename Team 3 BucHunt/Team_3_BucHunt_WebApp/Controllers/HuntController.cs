@@ -30,16 +30,32 @@ namespace Team_3_BucHunt_WebApp.Controllers;
 public class HuntController : Controller
 {
     public Models.User user = new Models.User();
-    public Models.Task task = new Models.Task();
-    private BucHuntContext db = new BucHuntContext();
+    private readonly List<Models.User> allUsers;
+    private readonly List<Models.Task> taskList;
+    private readonly List<Models.Location> locations;
+    //public Models.Task task = new Models.Task();
+    //private BucHuntContext db = new BucHuntContext();
     //List<User> teams = new List<User>();
     //List<List<User>> teamList = new List<List<User>>();
 
+
+    /* This is used to create a "local" connection to the 
+       database that can be reused for different purposes.
+        it takes advantage of the database connection string in
+        the appsettings.json file and the builder.Services settings
+        in the Program.cs file > these settings allow for one connection
+        established to the database on load of the project that can be
+        called at any point from the controllers using the local var below
+        - Hannah*/
     private readonly BucHuntContext _context;
 
+    //nothing is calling this yet, but _context is still getting a connection to the database? - Hannah (I need to remind myself the details of how this works)
     public HuntController(BucHuntContext context)
     {
         _context = context;
+        allUsers = _context.Users.ToList(); //initializing this here allows for the same functionality as calling it in the Index method below
+        taskList = _context.Tasks.ToList(); //db call every time -- possibly tied to the page reloading after the button is hit
+        locations = _context.Locations.ToList();                                    
     }
 
     /**
@@ -57,24 +73,30 @@ public class HuntController : Controller
     [HttpGet]
     public ActionResult Index()
     {
+        ViewBag.locations = locations;
+        ViewBag.taskList = taskList;
         return View();
     }
 
     /// <summary>
     /// Returns Hunt page if code is correct will redirect if incorrect and will display invalid code.
     /// </summary>
+    /// 
+    /// NOTES: These should probably 
+    /// 
     /// <param name="user"></param>
     /// <returns></returns>
     [HttpPost]
     public IActionResult Index(User user)
     {
-        user.OpenDB(); //Generates the list of Users from the database
-        task.OpenDB(); //Generates the list of Tasks from the database
-        bool correct = false;
-       
+        //List<Models.User> allUsers = _context.Users.ToList();
+        //user.OpenDB(); //Generates the list of Users from the database
+        //task.OpenDB(); //Generates the list of Tasks from the database
+        bool correct = true;
+        ViewBag.taskList = taskList;
+        ViewBag.locations = locations;
 
-
-        foreach (User u in user.usersList)
+        foreach (User u in allUsers)
         {
             if (user.AccessCode == u.AccessCode)
             {
