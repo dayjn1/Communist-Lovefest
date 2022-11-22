@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\janin\\Documents\\GitHub\\404-Industries\\Team 3 BucHunt\\Team_3_BucHunt_WebApp\\Team_3_BucHunt_WebApp.csproj": {}
+    "C:\\Users\\drd14\\source\\repos\\404-Industries\\Team 3 BucHunt\\Team_3_BucHunt_WebApp\\Team_3_BucHunt_WebApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\janin\\Documents\\GitHub\\404-Industries\\Team 3 BucHunt\\Team_3_BucHunt_WebApp\\Team_3_BucHunt_WebApp.csproj": {
+    "C:\\Users\\drd14\\source\\repos\\404-Industries\\Team 3 BucHunt\\Team_3_BucHunt_WebApp\\Team_3_BucHunt_WebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\janin\\Documents\\GitHub\\404-Industries\\Team 3 BucHunt\\Team_3_BucHunt_WebApp\\Team_3_BucHunt_WebApp.csproj",
+        "projectUniqueName": "C:\\Users\\drd14\\source\\repos\\404-Industries\\Team 3 BucHunt\\Team_3_BucHunt_WebApp\\Team_3_BucHunt_WebApp.csproj",
         "projectName": "Team_3_BucHunt_WebApp",
-        "projectPath": "C:\\Users\\janin\\Documents\\GitHub\\404-Industries\\Team 3 BucHunt\\Team_3_BucHunt_WebApp\\Team_3_BucHunt_WebApp.csproj",
-        "packagesPath": "C:\\Users\\janin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\janin\\Documents\\GitHub\\404-Industries\\Team 3 BucHunt\\Team_3_BucHunt_WebApp\\obj\\",
+        "projectPath": "C:\\Users\\drd14\\source\\repos\\404-Industries\\Team 3 BucHunt\\Team_3_BucHunt_WebApp\\Team_3_BucHunt_WebApp.csproj",
+        "packagesPath": "C:\\Users\\drd14\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\drd14\\source\\repos\\404-Industries\\Team 3 BucHunt\\Team_3_BucHunt_WebApp\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\janin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\drd14\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
