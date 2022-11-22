@@ -1757,7 +1757,7 @@ ul.list-2 {
         color: #fff;
     }
 
-#footer {
+/*#footer {
     padding: 3px 0 3px;
     overflow: hidden;
 }
@@ -1769,7 +1769,7 @@ ul.list-2 {
     #footer h1 {
         float: left;
         margin-right: 17px;
-    }
+    }*/
 
 .txt_priv {
     font-size: 14px;
@@ -2096,7 +2096,7 @@ ul.list-2 {
         font: bold 14px/20px 'Roboto', Arial, sans-serif;
     }
 
-    #footer {
+/*    #footer {
         padding-top: 30px;
         padding-bottom: 20px;
     }
@@ -2105,7 +2105,7 @@ ul.list-2 {
             float: none;
             margin-right: 0;
         }
-
+*/
     .txt_priv {
         margin-top: 10px;
     }
