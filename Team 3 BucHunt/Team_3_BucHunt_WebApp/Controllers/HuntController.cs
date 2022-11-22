@@ -31,6 +31,8 @@ public class HuntController : Controller
 {
     public Models.User user = new Models.User();
     private readonly List<Models.User> allUsers;
+    private readonly List<Models.Task> taskList;
+    private readonly List<Models.Location> locations;
     //public Models.Task task = new Models.Task();
     //private BucHuntContext db = new BucHuntContext();
     //List<User> teams = new List<User>();
@@ -52,8 +54,8 @@ public class HuntController : Controller
     {
         _context = context;
         allUsers = _context.Users.ToList(); //initializing this here allows for the same functionality as calling it in the Index method below
-                                            //db call every time -- possibly tied to the page reloading after the button is hit
-                                            
+        taskList = _context.Tasks.ToList(); //db call every time -- possibly tied to the page reloading after the button is hit
+        locations = _context.Locations.ToList();                                    
     }
 
     /**
@@ -71,6 +73,8 @@ public class HuntController : Controller
     [HttpGet]
     public ActionResult Index()
     {
+        ViewBag.locations = locations;
+        ViewBag.taskList = taskList;
         return View();
     }
 
@@ -88,8 +92,9 @@ public class HuntController : Controller
         //List<Models.User> allUsers = _context.Users.ToList();
         //user.OpenDB(); //Generates the list of Users from the database
         //task.OpenDB(); //Generates the list of Tasks from the database
-        bool correct = false;
-        
+        bool correct = true;
+        ViewBag.taskList = taskList;
+        ViewBag.locations = locations;
 
         foreach (User u in allUsers)
         {

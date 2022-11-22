@@ -3,10 +3,10 @@
     "Team_3_BucHunt_WebApp": {
       "commandName": "Project",
       "launchBrowser": true,
+      "applicationUrl": "https://localhost:49735;http://localhost:49736",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
-      },
-      "applicationUrl": "https://localhost:49735;http://localhost:49736"
+      }
     }
   }
 }

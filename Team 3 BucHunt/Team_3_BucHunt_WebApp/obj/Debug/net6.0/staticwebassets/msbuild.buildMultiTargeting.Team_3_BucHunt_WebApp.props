@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\Team_3_BucHunt_WebApp.props" />
-</Project>
