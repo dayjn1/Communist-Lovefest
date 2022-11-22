@@ -10,22 +10,50 @@
     <link rel="stylesheet" href="~/css/ETSUStyle.css" />
     <link rel="stylesheet" href="~/css/ETSU.css" />
 </head>
-<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-    <div class="container-fluid">
-        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">404 Industries</a>
+<nav>
+    <div class="nav-top-page">
+        <a asp-area="" class="nav-doodad" asp-controller="Home" asp-action="Index">404 Industries</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                 aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-            <ul class="navbar-nav flex-grow-1">
+            <ul class="menu list--inline text--norwester"
                 <li class="nav-item">
-                    <a class="nav-link text-dark" asp-area="" asp-controller="Hunt" asp-action="Index">Task List</a>
+                    <a asp-area="" asp-controller="Hunt" asp-action="Index">Task List</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark" asp-area="" asp-controller="Hunt" asp-action="Leaderboard">Leaderboard</a>
+                    <a asp-area="" asp-controller="Hunt" asp-action="Leaderboard">Leaderboard</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
+
+@*<div id="nav__primary" class="clearfix" role="navigation">
+                <h2>
+                 404 Industries
+                </h2>
+                <ul class="menu list--inline text--norwester">
+                    <li>
+                        <a href="//webmail.etsu.edu" title="(ETSU)">Email</a>
+                    </li>
+                    <li>
+                        <a href="//elearn.etsu.edu/" title="Desire to Learn (D2L) at ETSU. View your courses, explore tools &amp; features, and customize your eLearning experience.">D2L</a>
+                    </li>
+                    <li>
+                        <a href="/helpdesk" title="ETSU Help Desk">HelpDesk</a>
+                    </li>
+                    <li>
+                        <a href="//www.etsu.edu/ehome/atoz/" title="A to Z listing of everything at East Tennessee State University (ETSU)">A – Z</a>
+                    </li>
+                    <li>
+                        <a href="http://www.etsubucs.com" title="College Athletics &amp; Athletes at East Tennessee State University (ETSU)">Athletics</a>
+                    </li>
+                    <li>
+                        <a title="Safety at East Tennessee State University (ETSU)" href="//www.etsu.edu/safety/">Safety</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>*@

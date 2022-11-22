@@ -32,6 +32,7 @@ public class HuntController : Controller
     public Models.User user = new Models.User();
     public Models.Task task = new Models.Task();
     private BucHuntContext db = new BucHuntContext();
+    public List<Models.Task> taskList = new List<Models.Task>();
     //List<User> teams = new List<User>();
     //List<List<User>> teamList = new List<List<User>>();
 
@@ -40,6 +41,7 @@ public class HuntController : Controller
     public HuntController(BucHuntContext context)
     {
         _context = context;
+        taskList = _context.Tasks.ToList();
     }
 
     /**
@@ -56,7 +58,8 @@ public class HuntController : Controller
 
     [HttpGet]
     public ActionResult Index()
-    {
+    { 
+        ViewBag.taskList = taskList;
         return View();
     }
 
@@ -70,23 +73,20 @@ public class HuntController : Controller
     {
         user.OpenDB(); //Generates the list of Users from the database
         task.OpenDB(); //Generates the list of Tasks from the database
-        bool correct = false;
-       
+        bool correct = true;
+        ViewBag.taskList = taskList;
 
 
         foreach (User u in user.usersList)
         {
             if (user.AccessCode == u.AccessCode)
             {
-               
                 correct = true; 
                 break;
             }
         }
         if (correct)
         {
-            List<Models.Task> taskList = _context.Tasks.ToList();
-            ViewBag.taskList = taskList;
             return View();
         }
         else
