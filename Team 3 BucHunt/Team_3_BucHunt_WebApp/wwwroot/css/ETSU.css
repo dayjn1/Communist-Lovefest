@@ -78,7 +78,7 @@
  * SRC: https://picnicss.com
  * Picnic CSS v.6.5.0 */
 
-article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section {
+article, aside, details, figcaption, figure, header, hgroup, main, nav, section {
     display: block
 }
 
@@ -3474,10 +3474,6 @@ input.stack, select.stack, textarea.stack {
 
 .card header:last-child, .modal .overlay ~ * header:last-child {
     border-bottom: 0
-}
-
-.card footer, .modal .overlay ~ * footer {
-    padding: .8em
 }
 
 .card p, .modal .overlay ~ * p {
