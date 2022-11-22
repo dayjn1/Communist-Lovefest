@@ -45,37 +45,37 @@ public class User
 
     public virtual ICollection<Hunt> Hunts { get; } = new List<Hunt>();
 
+    //not needed anymore
+    //SqlCommand command;
+    //SqlDataReader dataReader;
+    ////String sql = "";
+    //string connectionString = " ";
 
-    SqlCommand command;
-    SqlDataReader dataReader;
-    String sql = "";
-    string connectionString = " ";
+    //public List<User> usersList = new List<User>(); //Individual person list
 
-    public List<User> usersList = new List<User>(); //Individual person list
-
-    public List<User> teamList = new List<User>(); //Team list
+    //public List<User> teamList = new List<User>(); //Team list
 
 
     // <summary>
     // Method to open and establish connection to the database
     // Will generate a list of Users stored on the database
     // </summary>
-    public void OpenDB()
-    {
-        connectionString = @"Server=FALL22-4250-1-3; Database=BucHunt; User Id=dbaccess; Password=Password1!";
-        using (SqlConnection connection = new SqlConnection(connectionString))
-        {
-            connection.Open();
-            sql = "SELECT * FROM [BucHunt].[dbo].[Users]";
-            command = new SqlCommand(sql, connection);
-            dataReader = command.ExecuteReader();
-            while (dataReader.Read())
-            {
-                User user = new User(dataReader.GetInt32(0), dataReader.GetString(1), dataReader.GetString(2), dataReader.GetString(3), dataReader.GetInt32(4));
-                usersList.Add(user);
-            }
-        }
-    }
+    //public void OpenDB()
+    //{
+    //    connectionString = @"Server=FALL22-4250-1-3; Database=BucHunt; User Id=dbaccess; Password=Password1!";
+    //    using (SqlConnection connection = new SqlConnection(connectionString))
+    //    {
+    //        connection.Open();
+    //        sql = "SELECT * FROM [BucHunt].[dbo].[Users]";
+    //        command = new SqlCommand(sql, connection);
+    //        dataReader = command.ExecuteReader();
+    //        while (dataReader.Read())
+    //        {
+    //            User user = new User(dataReader.GetInt32(0), dataReader.GetString(1), dataReader.GetString(2), dataReader.GetString(3), dataReader.GetInt32(4));
+    //            usersList.Add(user);
+    //        }
+    //    }
+    //}
 
 
     /// <summary>
@@ -109,8 +109,8 @@ public class User
     }
 
 
-    public List<User> GetList()
-    {
-        return usersList;
-    }
+    //public List<User> GetList()
+    //{
+    //    return usersList;
+    //}
 } //End public partial class User
