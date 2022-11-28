@@ -73,7 +73,7 @@ public class HuntController : Controller
     {
         user.OpenDB(); //Generates the list of Users from the database
         task.OpenDB(); //Generates the list of Tasks from the database
-        bool correct = true;
+        bool correct = false;
         ViewBag.taskList = taskList;
 
 
@@ -112,6 +112,66 @@ public class HuntController : Controller
     { 
         return View();
     }   //End public IActionResult LeaderBoard()
+
+
+/**
+* Method Name: AnswerForm <br>
+* Method Purpose: Returns the view answer form for a question <br>
+* <hr>
+* Date created: Nov 26,2022 <br>
+* Date last modified: Nov 28,2022 <br>
+* <hr>
+* Notes on specifications, special algorithms, and assumptions: N/A
+* <hr> 
+* @returns View()
+*/
+    public IActionResult AnswerForm(int taskId, bool incorrect)
+    {
+        //PSEUDO CODE
+        /*
+         * string Question = tasksList[taskId].Question;
+         * return PartialView(_TaskAnswerForm, Question, incorrect);
+         * 
+         * (The incorrect bool tracks if they got the question wrong so
+         * a message can be displayed accordingly)
+         */
+        return RedirectToAction("Index", "Hunt");
+    }
+
+
+/**
+* Method Name: CheckAnswer <br>
+* Method Purpose: Checks a passed answer to see if it is correct <br>
+* <hr>
+* Date created: Nov 26,2022 <br>
+* Date last modified: Nov 28,2022 <br>
+* <hr>
+* Notes on specifications, special algorithms, and assumptions: N/A
+* <hr> 
+* @returns View()
+*/
+    public IActionResult CheckAnswer(int taskId, string answer)
+    {
+        //PSEUDO CODE
+        /*
+         * correctAnswer = tasksList[TaskId].Answer;
+         * 
+         * if ( answer == correctAnswer)
+         * { 
+         * 
+         * either pull the task from the list so they can answer again
+         * or pass a var to make it inaccessible
+         * 
+         * return RedirectToAction("Index", "Hunt");
+         * }
+         * else
+         * {
+         * return RedirectToAction("AnswerForm","Hunt", incorrect)
+         * }
+         * 
+         */
+        return RedirectToAction("Index", "Hunt");
+    }
 
 } //End public class HuntController : Controller
 

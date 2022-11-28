@@ -1,6 +1,18 @@
-﻿<!DOCTYPE html>
+﻿@{
+/**
+* ---------------------------------------------------------------------------
+* File name: _NavBar.cshtml
+* Project name: 404 Industries BucHunt
+* ---------------------------------------------------------------------------
+* Author’s name and email: Dante Hays, haysdc@etsu.edu
+* Creation Date: Nov 20, 2022
+* Last modified: Dante Hays haysdc@etsu.edu Nov 28, 2022
+* ---------------------------------------------------------------------------
+*/
+}
+<!DOCTYPE html>
 <html lang="en">
-<head>
+<head> <!--Style sheets and imports-->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Team_3_BucHunt_WebApp</title>
@@ -11,7 +23,7 @@
     <link rel="stylesheet" href="~/css/ETSU.css" />
 </head>
 <nav>
-    <div class="nav-top-page">
+    <div class="nav-top-page"><!--This is the main element-->
         <a asp-area="" class="nav-doodad" asp-controller="Home" asp-action="Index">404 Industries</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                 aria-expanded="false" aria-label="Toggle navigation">
@@ -19,7 +31,7 @@
         </button>
         <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
             <ul class="menu list--inline text--norwester"
-                <li class="nav-item">
+                <li class="nav-item"><!--These are the items in the navbar-->
                     <a asp-area="" asp-controller="Hunt" asp-action="Index">Task List</a>
                 </li>
                 <li class="nav-item">
