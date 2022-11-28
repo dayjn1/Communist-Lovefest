@@ -38,6 +38,8 @@
 
     <td>@(ViewBag.taskList as List<Team_3_BucHunt_WebApp.Models.Task>)</td>
 
+    @{int i = 0;}
+
     @foreach (var task in ViewBag.taskList)
     {<!-- loop and assign each task and location to generate the list-->
         if (task.LocationId == ViewBag.locations[i].LocationId)
