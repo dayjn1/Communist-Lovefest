@@ -1,4 +1,16 @@
-﻿<!--This aint workin rn-->
+﻿@{
+/**
+* ---------------------------------------------------------------------------
+* File name: _TaskAnswerForm.cshtml
+* Project name: 404 Industries BucHunt
+* ---------------------------------------------------------------------------
+* Author’s name and email: Dante Hays, haysdc@etsu.edu
+* Creation Date: Nov 20, 2022
+* Last modified: Dante Hays haysdc@etsu.edu Nov 28, 2022
+* ---------------------------------------------------------------------------
+*/
+}
+<!--This aint workin rn-->
 
 <div class="text-center">
     <!--Main div for home page-->
@@ -6,11 +18,22 @@
     <br />
     <h3>Question:</h3>
     <br />
-    <div
+    <div>
         <body>
-            <input type="submit"
-                   value="Submit Answer"
-                   onclick="location.href='@Url.Action("JoinHunt", "Home")'" />
+            @if (TempData["Message"] != null)
+             {
+               <div class="text-danger">
+               <strong>@TempData["Message"]</strong>
+               </div>
+             }
+             @using (Html.BeginForm("Index", "Hunt", FormMethod.Post))
+             {
+               <h3>Enter an invitation code:</h3>
+               @Html.EditorFor(task => task, new { @class = "form-control" })
+       
+               <br />
+               <input type="submit" value="Submit" />
+             }
         </body>
     </div>
 </div> <!--End main div for home page-->

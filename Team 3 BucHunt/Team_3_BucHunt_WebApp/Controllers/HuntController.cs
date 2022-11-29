@@ -30,11 +30,17 @@ namespace Team_3_BucHunt_WebApp.Controllers;
 public class HuntController : Controller
 {
     public Models.User user = new Models.User();
+    //Hannah's code
     private readonly List<Models.User> allUsers;
     private readonly List<Models.Task> taskList;
     private readonly List<Models.Location> locations;
     //public Models.Task task = new Models.Task();
     //private BucHuntContext db = new BucHuntContext();
+    //dante's code
+    public Models.Task task = new Models.Task();
+    private BucHuntContext db = new BucHuntContext();
+    //public List<Models.Task> taskList = new List<Models.Task>();
+    
     //List<User> teams = new List<User>();
     //List<List<User>> teamList = new List<List<User>>();
 
@@ -53,9 +59,12 @@ public class HuntController : Controller
     public HuntController(BucHuntContext context)
     {
         _context = context;
+        //hannah's code
         allUsers = _context.Users.ToList(); //initializing this here allows for the same functionality as calling it in the Index method below
         taskList = _context.Tasks.ToList(); //db call every time -- possibly tied to the page reloading after the button is hit
         locations = _context.Locations.ToList();                                    
+        //dante's
+        //taskList = _context.Tasks.ToList();
     }
 
     /**
@@ -74,6 +83,7 @@ public class HuntController : Controller
     public ActionResult Index()
     {
         ViewBag.locations = locations;
+    
         ViewBag.taskList = taskList;
         return View();
     }
@@ -92,23 +102,24 @@ public class HuntController : Controller
         //List<Models.User> allUsers = _context.Users.ToList();
         //user.OpenDB(); //Generates the list of Users from the database
         //task.OpenDB(); //Generates the list of Tasks from the database
-        bool correct = true;
+        bool correct = true; //init this to false
         ViewBag.taskList = taskList;
         ViewBag.locations = locations;
+        // user.OpenDB(); //Generates the list of Users from the database
+        // task.OpenDB(); //Generates the list of Tasks from the database
+        // bool correct = false;
+        // ViewBag.taskList = taskList;  --dante's changes
 
         foreach (User u in allUsers)
         {
             if (user.AccessCode == u.AccessCode)
             {
-               
                 correct = true; 
                 break;
             }
         }
         if (correct)
         {
-            List<Models.Task> taskList = _context.Tasks.ToList();
-            ViewBag.taskList = taskList;
             return View();
         }
         else
@@ -134,6 +145,66 @@ public class HuntController : Controller
     { 
         return View();
     }   //End public IActionResult LeaderBoard()
+
+
+/**
+* Method Name: AnswerForm <br>
+* Method Purpose: Returns the view answer form for a question <br>
+* <hr>
+* Date created: Nov 26,2022 <br>
+* Date last modified: Nov 28,2022 <br>
+* <hr>
+* Notes on specifications, special algorithms, and assumptions: N/A
+* <hr> 
+* @returns View()
+*/
+    public IActionResult AnswerForm(int taskId, bool incorrect)
+    {
+        //PSEUDO CODE
+        /*
+         * string Question = tasksList[taskId].Question;
+         * return PartialView(_TaskAnswerForm, Question, incorrect);
+         * 
+         * (The incorrect bool tracks if they got the question wrong so
+         * a message can be displayed accordingly)
+         */
+        return RedirectToAction("Index", "Hunt");
+    }
+
+
+/**
+* Method Name: CheckAnswer <br>
+* Method Purpose: Checks a passed answer to see if it is correct <br>
+* <hr>
+* Date created: Nov 26,2022 <br>
+* Date last modified: Nov 28,2022 <br>
+* <hr>
+* Notes on specifications, special algorithms, and assumptions: N/A
+* <hr> 
+* @returns View()
+*/
+    public IActionResult CheckAnswer(int taskId, string answer)
+    {
+        //PSEUDO CODE
+        /*
+         * correctAnswer = tasksList[TaskId].Answer;
+         * 
+         * if ( answer == correctAnswer)
+         * { 
+         * 
+         * either pull the task from the list so they can answer again
+         * or pass a var to make it inaccessible
+         * 
+         * return RedirectToAction("Index", "Hunt");
+         * }
+         * else
+         * {
+         * return RedirectToAction("AnswerForm","Hunt", incorrect)
+         * }
+         * 
+         */
+        return RedirectToAction("Index", "Hunt");
+    }
 
 } //End public class HuntController : Controller
 
