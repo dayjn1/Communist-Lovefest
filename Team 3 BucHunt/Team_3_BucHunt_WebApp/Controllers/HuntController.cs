@@ -161,27 +161,28 @@ public class HuntController : Controller
     public IActionResult AnswerForm(int taskId, bool incorrect)
     {
         //PSEUDO CODE
-        /*
-         * string Question = tasksList[taskId].Question;
-         * return PartialView(_TaskAnswerForm, Question, incorrect);
-         * 
-         * (The incorrect bool tracks if they got the question wrong so
-         * a message can be displayed accordingly)
-         */
+
+
+         string Question = taskList[taskId].Question;
+         //return PartialView(_TaskAnswerForm, Question, incorrect);
+        
+        //(The incorrect bool tracks if they got the question wrong so
+         //a message can be displayed accordingly)
+         
         return RedirectToAction("Index", "Hunt");
     }
 
 
-/**
-* Method Name: CheckAnswer <br>
-* Method Purpose: Checks a passed answer to see if it is correct <br>
-* <hr>
-* Date created: Nov 26,2022 <br>
-* Date last modified: Nov 28,2022 <br>
-* <hr>
-* Notes on specifications, special algorithms, and assumptions: N/A
-* <hr> 
-* @returns View()
+    /**
+    * Method Name: CheckAnswer <br>
+    * Method Purpose: Checks a passed answer to see if it is correct <br>
+    * <hr>
+    * Date created: Nov 26,2022 <br>
+    * Date last modified: Nov 28,2022 <br>
+    * <hr>
+    * Notes on specifications, special algorithms, and assumptions: N/A
+    * <hr> 
+    * @returns View()
 */
     public IActionResult CheckAnswer(int taskId, string answer)
     {
