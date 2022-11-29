@@ -11,9 +11,10 @@
 */
 }
 
-
+@model string
 <div class="text-center"><!--The main div for the Hunt page-->
-        <body>
+    <h3> @Model </h3>
+    <body>
             @{ Html.RenderPartial("_NavBar");}
             @{ Html.RenderPartial("_TaskList");}
         </body>

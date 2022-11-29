@@ -85,7 +85,7 @@ public class HuntController : Controller
         ViewBag.locations = locations;
     
         ViewBag.taskList = taskList;
-        return View();
+            return View(model: HttpContext.Session.GetString("currentUser"));
     }
 
     /// <summary>
@@ -114,13 +114,16 @@ public class HuntController : Controller
         {
             if (user.AccessCode == u.AccessCode)
             {
-                correct = true; 
+                HttpContext.Session.SetString("currentUser", u.Email);
+                correct = true;
                 break;
             }
         }
         if (correct)
         {
-            return View();
+            List<Models.Task> taskList = _context.Tasks.ToList();
+            ViewBag.taskList = taskList;
+            return View(model: HttpContext.Session.GetString("currentUser"));
         }
         else
         {
