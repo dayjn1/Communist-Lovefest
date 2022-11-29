@@ -28,9 +28,11 @@
         if (task.LocationId == ViewBag.locations[i].LocationId)
         {
             string locationName = ViewBag.locations[i].Name;
+            <h2 style="font-family:Norwester"> @Html.Raw(locationName)</h2>
+            Html.RenderPartial("_TaskAnswerForm", (Team_3_BucHunt_WebApp.Models.Task)task);
 
-            <dt><a style="font-family:Norwester" id=@Html.Raw(task.TaskId) href="">@locationName</a></dt>
-            <dd style="font-family:Norwester"> @Html.Raw(task.Question)</dd>
+            //<dt><a style="font-family:Norwester" id=@Html.Raw(task.TaskId) href=@{Html.RenderPartial("_TaskAnswerForm", (Team_3_BucHunt_WebApp.Models.Task)task);}>@locationName</a></dt>
+            //<dd style="font-family:Norwester"> @Html.Raw(task.Question)</dd>
             <br>
         }
         i++;
