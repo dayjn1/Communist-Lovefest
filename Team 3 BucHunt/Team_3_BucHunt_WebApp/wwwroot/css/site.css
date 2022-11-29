@@ -54,7 +54,7 @@ html, body {
 .page-wrap {
     min-height: 100%;
     /* equal to footer height */
-    margin-bottom: -142px;
+    margin-bottom: -20px;
 }
 
     .page-wrap:after {
@@ -62,10 +62,14 @@ html, body {
         display: block;
     }
 
-    .site-footer, .page-wrap:after {
-        height: 142px;
+    .site-footer {
+        height: 20px;
+        position: absolute;
+        bottom: 0;
     }
 
 .site-footer {
-    background: orange;
+
+    width: 100%;
+
 }
