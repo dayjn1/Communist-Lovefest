@@ -148,14 +148,12 @@ public class HuntController : Controller
 */
     public IActionResult AnswerForm(int taskId, bool incorrect)
     {
-        //PSEUDO CODE
-        /*
-         * string Question = tasksList[taskId].Question;
-         * return PartialView(_TaskAnswerForm, Question, incorrect);
-         * 
-         * (The incorrect bool tracks if they got the question wrong so
-         * a message can be displayed accordingly)
-         */
+        string Question = taskList[taskId].Question;
+        //return PartialView(_TaskAnswerForm, Question, incorrect);
+         
+        //(The incorrect bool tracks if they got the question wrong so
+        // a message can be displayed accordingly)
+ 
         return RedirectToAction("Index", "Hunt");
     }
 
@@ -171,27 +169,30 @@ public class HuntController : Controller
     * <hr> 
     * @returns View()
 */
-    public IActionResult CheckAnswer(int taskId, string answer)
-    {
-        //PSEUDO CODE
-        /*
-         * correctAnswer = tasksList[TaskId].Answer;
-         * 
-         * if ( answer == correctAnswer)
-         * { 
-         * 
-         * either pull the task from the list so they can answer again
-         * or pass a var to make it inaccessible
-         * 
-         * return RedirectToAction("Index", "Hunt");
-         * }
-         * else
-         * {
-         * return RedirectToAction("AnswerForm","Hunt", incorrect)
-         * }
-         * 
-         */
-        return RedirectToAction("Index", "Hunt");
+    public IActionResult CheckAnswer(Team_3_BucHunt_WebApp.Models.Task task)
+    {       
+        string correctAnswer = "";
+
+        foreach(var t in taskList)
+        {
+            if (t.TaskId == task.TaskId)
+                correctAnswer = t.Answer;
+        }
+
+        // either pull the task from the list so they can answer again
+        // or pass a var to make it inaccessible
+        if (task.Answer == correctAnswer)
+        {
+            TempData["Message"] = "Correct!";
+            return RedirectToAction("Index", "Hunt");
+        }
+        else
+        {
+            //return RedirectToAction("AnswerForm", "Hunt", false);
+            TempData["Message"] = "Incorrect Answer";
+            return RedirectToAction("Index", "Hunt");
+        }
+        
     }
 
 } //End public class HuntController : Controller

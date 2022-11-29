@@ -33,34 +33,6 @@ public partial class Task
 
     public string? Answer { get; set; }
 
-    //SqlCommand command;
-    //SqlDataReader dataReader;
-    //String sql = "";
-    //string connectionString = " ";
-
-    //public List<Task> tasksList = new List<Task>();
-
-    // <summary>
-    //  Establishes connection to the database
-    //  Generates a list of Tasks from the tasks stored on the database.
-    // </summary>
-    //public void OpenDB()
-    //{
-    //    connectionString = @"Server=FALL22-4250-1-3; Database=BucHunt; User Id=dbaccess; Password=Password1!";
-    //    using (SqlConnection connection = new SqlConnection(connectionString))
-    //    {
-    //        connection.Open();
-    //        sql = "SELECT * FROM [BucHunt].[dbo].[Tasks]";
-    //        command = new SqlCommand(sql, connection);
-    //        dataReader = command.ExecuteReader();
-    //        while (dataReader.Read())
-    //        {
-    //            Task task = new Task(dataReader.GetInt32(0), dataReader.GetInt32(1), dataReader.GetString(2), dataReader.GetString(3));
-    //            tasksList.Add(task);
-    //        }
-    //    }
-    //}
-
     /// <summary>
     /// Base constructor for Task class
     /// </summary>

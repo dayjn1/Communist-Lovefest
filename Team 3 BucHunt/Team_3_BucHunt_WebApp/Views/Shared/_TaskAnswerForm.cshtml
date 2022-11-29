@@ -2,13 +2,16 @@
 @model Team_3_BucHunt_WebApp.Models.Task
 <div class="text-center">
     <!--Main div for home page-->
-    <dd> @Model.Question </dd>
     <br />
     <div>
-        <body>
-            <input type="submit"
-                   value="Submit Answer"
-                   onclick="location.href='@Url.Action("JoinHunt", "Home")'" />
-        </body>
+        @using (Html.BeginForm("CheckAnswer", "Hunt", FormMethod.Post))
+        {
+            <h3>@Model.Question:</h3>
+            @Html.EditorFor(task => task.Answer, new { @class = "form-control" })
+            @Html.HiddenFor(task => task.TaskId, new { Value = Model.TaskId })
+
+            <br />
+            <input type="submit" value="Submit Answer" />
+        }
     </div>
 </div> <!--End main div for home page-->
