@@ -15,6 +15,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Team_3_BucHunt_WebApp.Models;
+//using Team_3_BucHunt_WebApp.Views;
 
 namespace Team_3_BucHunt_WebApp.Controllers;
 
@@ -102,7 +103,7 @@ public class HuntController : Controller
         //List<Models.User> allUsers = _context.Users.ToList();
         //user.OpenDB(); //Generates the list of Users from the database
         //task.OpenDB(); //Generates the list of Tasks from the database
-        bool correct = true; //init this to false
+        bool correct = false; //init this to false
         ViewBag.taskList = taskList;
         ViewBag.locations = locations;
         // user.OpenDB(); //Generates the list of Users from the database
@@ -121,9 +122,10 @@ public class HuntController : Controller
         }
         if (correct)
         {
-            List<Models.Task> taskList = _context.Tasks.ToList();
+            
             ViewBag.taskList = taskList;
             return View(model: HttpContext.Session.GetString("currentUser"));
+
         }
         else
         {
@@ -167,12 +169,12 @@ public class HuntController : Controller
 
 
          string Question = taskList[taskId].Question;
-         //return PartialView(_TaskAnswerForm, Question, incorrect);
+         //return PartialView(_TaskAnswerForm);
         
         //(The incorrect bool tracks if they got the question wrong so
          //a message can be displayed accordingly)
          
-        return RedirectToAction("Index", "Hunt");
+        return RedirectToAction("_TaskAnswerForm", "Shared");
     }
 
 
