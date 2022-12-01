@@ -200,25 +200,25 @@ multiple terms then each term begins with an UPPERCASE letter.
 * Validating the user input is important for this project because if a user inputs a invalid code they should not be given access to the game.
 * For validating the access codes inputted by the users setting the field to be required as well as setting the maximum length of the property can be done as shown   below 
 
-<img src="/ReadMeSupport/Validation1.png" width=50% height=50%> 
+<img src="/ReadMeSupport/Validation1.png" width=65% height=65%> 
 >Side Note:  It is possible to add a regular expression which will only allow for integers to be accepted into the text box. 
 
 *Inside the JoinHunt.cshtml file validation can be done with a simple if looking to see if the TempData value is null.
   
-<img src="/ReadMeSupport/Validation2.png" width=50% height=50%>
+<img src="/ReadMeSupport/Validation2.png" width=65% height=65%>
   
 * Example below is if the TempData is null
   
-<img src="/ReadMeSupport/Validation3.png" width=50% height=50%>
+<img src="/ReadMeSupport/Validation3.png" width=65% height=65%>
 
 * Example below is if the TempData is not null
 
-<img src="/ReadMeSupport/Validation3.png" width=50% height=50%>
+<img src="/ReadMeSupport/Validation3.png" width=65% height=65%>
 
 * The Code that handles the validation and will store the message in the TemData is located in the model for the Hunt.
 * Works by taking the access code input and running a foreach loop comparing the input with the access codes stored in a list pulled from the database. 
   
-<img src="/ReadMeSupport/Validation.PNG" width=50% height=50%> 
+<img src="/ReadMeSupport/Validation.PNG" width=65% height=65%> 
 
 ## Notification Service
 >This section will cover how the access codes can be sent to users' mobile devices through text or email
