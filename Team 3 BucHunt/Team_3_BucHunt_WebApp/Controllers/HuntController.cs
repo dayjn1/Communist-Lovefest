@@ -136,6 +136,66 @@ public class HuntController : Controller
         return View();
     }   //End public IActionResult LeaderBoard()
 
+    /**
+* Method Name: AnswerForm <br>
+* Method Purpose: Returns the view answer form for a question <br>
+* <hr>
+* Date created: Nov 26,2022 <br>
+* Date last modified: Nov 28,2022 <br>
+* <hr>
+* Notes on specifications, special algorithms, and assumptions: N/A
+* <hr> 
+* @returns View()
+*/
+    public IActionResult AnswerForm(int taskId, bool incorrect)
+    {
+        string Question = taskList[taskId].Question;
+        //return PartialView(_TaskAnswerForm, Question, incorrect);
+         
+        //(The incorrect bool tracks if they got the question wrong so
+        // a message can be displayed accordingly)
+ 
+        return RedirectToAction("Index", "Hunt");
+    }
+
+
+    /**
+    * Method Name: CheckAnswer <br>
+    * Method Purpose: Checks a passed answer to see if it is correct <br>
+    * <hr>
+    * Date created: Nov 26,2022 <br>
+    * Date last modified: Nov 28,2022 <br>
+    * <hr>
+    * Notes on specifications, special algorithms, and assumptions: N/A
+    * <hr> 
+    * @returns View()
+*/
+    public IActionResult CheckAnswer(Team_3_BucHunt_WebApp.Models.Task task)
+    {       
+        string correctAnswer = "";
+
+        foreach(var t in taskList)
+        {
+            if (t.TaskId == task.TaskId)
+                correctAnswer = t.Answer;
+        }
+
+        // either pull the task from the list so they can answer again
+        // or pass a var to make it inaccessible
+        if (task.Answer == correctAnswer)
+        {
+            TempData["Message"] = "Correct!";
+            return RedirectToAction("Index", "Hunt");
+        }
+        else
+        {
+            //return RedirectToAction("AnswerForm", "Hunt", false);
+            TempData["Message"] = "Incorrect Answer";
+            return RedirectToAction("Index", "Hunt");
+        }
+        
+    }
+
 } //End public class HuntController : Controller
 
 

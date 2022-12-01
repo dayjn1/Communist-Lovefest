@@ -106,9 +106,4 @@ public class User
         HuntId = huntId;
     }
 
-
-    //public List<User> GetList()
-    //{
-    //    return usersList;
-    //}
 } //End public partial class User
