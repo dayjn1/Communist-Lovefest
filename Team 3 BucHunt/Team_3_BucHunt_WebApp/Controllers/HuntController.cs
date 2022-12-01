@@ -6,6 +6,7 @@
 * Author’s name and email: Dante Hays, haysdc@etsu.edu
 * Creation Date: Nov 01, 2022
 * Last modified: Dante Hays haysdc@etsu.edu Nov 02, 2022
+*                Hannah Taylor taylorhm1@etsu.edu Dec 01, 2022
 * --------------------------------------------------------------------------- 
 */
 
@@ -16,6 +17,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Team_3_BucHunt_WebApp.Models;
 
+
 namespace Team_3_BucHunt_WebApp.Controllers;
 
 /**
@@ -23,20 +25,18 @@ namespace Team_3_BucHunt_WebApp.Controllers;
 * Class Purpose: Holds the logic for the Hunt page<br>
 * <hr>
 * Date created: Oct 27, 2022 <br>
-* Date last modified: Nov 02, 2022 
+* Date last modified: Dec 01, 2022 
 * @author Dante Hays
 */
 
 public class HuntController : Controller
 {
     public Models.User user = new Models.User();
+    //Hannah's code
     private readonly List<Models.User> allUsers;
     private readonly List<Models.Task> taskList;
     private readonly List<Models.Location> locations;
-    //public Models.Task task = new Models.Task();
-    //private BucHuntContext db = new BucHuntContext();
-    //List<User> teams = new List<User>();
-    //List<List<User>> teamList = new List<List<User>>();
+   
 
 
     /* This is used to create a "local" connection to the 
@@ -53,27 +53,30 @@ public class HuntController : Controller
     public HuntController(BucHuntContext context)
     {
         _context = context;
-        allUsers = _context.Users.ToList(); //initializing this here allows for the same functionality as calling it in the Index method below
-        taskList = _context.Tasks.ToList(); //db call every time -- possibly tied to the page reloading after the button is hit
+
+        allUsers = _context.Users.ToList(); //initializing this here allows for the same functionality as calling it in the Index method below, but is cleaner since this is the "constructor" for the controller and where global variables are usually initialized - best practice
+        taskList = _context.Tasks.ToList(); //db call every time page is loaded, but for now doesn't slow things down too much
         locations = _context.Locations.ToList();                                    
+        
     }
 
     /**
-* Method Name: Index <br>
-* Method Purpose: Returns the view of the Hunt page <br>
-* <hr>
-* Date created: Oct 27, 2022 <br>
-* Date last modified: Nov 03, 2022 <br>
-* <hr>
-* Notes on specifications, special algorithms, and assumptions: N/A
-* <hr> 
-* @returns View()
-*/
+    * Method Name: Index <br>
+    * Method Purpose: Returns the view of the Hunt page <br>
+    * <hr>
+    * Date created: Oct 27, 2022 <br>
+    * Date last modified: Nov 03, 2022 <br>
+    * <hr>
+    * Notes on specifications, special algorithms, and assumptions: N/A
+    * <hr> 
+    * @returns View()
+    */
 
     [HttpGet]
     public ActionResult Index()
     {
         ViewBag.locations = locations;
+    
         ViewBag.taskList = taskList;
             return View(model: HttpContext.Session.GetString("currentUser"));
     }
@@ -82,19 +85,18 @@ public class HuntController : Controller
     /// Returns Hunt page if code is correct will redirect if incorrect and will display invalid code.
     /// </summary>
     /// 
-    /// NOTES: These should probably 
+    /// NOTES: 
     /// 
     /// <param name="user"></param>
     /// <returns></returns>
     [HttpPost]
     public IActionResult Index(User user)
     {
-        //List<Models.User> allUsers = _context.Users.ToList();
-        //user.OpenDB(); //Generates the list of Users from the database
-        //task.OpenDB(); //Generates the list of Tasks from the database
-        bool correct = true;
-        ViewBag.taskList = taskList;
+        
+        bool correct = false; //init this to false so we go through validation every time
+        ViewBag.taskList = taskList; //tasklist was initialized in the "constructor" and is being passed into a viewbag to render the partial view tasklist page
         ViewBag.locations = locations;
+        
 
         foreach (User u in allUsers)
         {
@@ -107,9 +109,10 @@ public class HuntController : Controller
         }
         if (correct)
         {
-            List<Models.Task> taskList = _context.Tasks.ToList();
+            
             ViewBag.taskList = taskList;
             return View(model: HttpContext.Session.GetString("currentUser"));
+
         }
         else
         {
@@ -119,43 +122,48 @@ public class HuntController : Controller
         }
     } //End public IActionResult Index()
 
-/**
-* Method Name: LeaderBoard <br>
-* Method Purpose: Returns the view of the Hunt page <br>
-* <hr>
-* Date created: Nov 15, 2022 <br>
-* Date last modified: Nov 29, 2022 <br>
-* <hr>
-* Notes on specifications, special algorithms, and assumptions: N/A
-* <hr> 
-* @returns View()
-*/
+    /**
+    * Method Name: LeaderBoard <br>
+    * Method Purpose: Returns the view of the Hunt page <br>
+    * <hr>
+    * Date created: Nov 15, 2022 <br>
+    * Date last modified: Nov 15, 2022 <br>
+    * <hr>
+    * Notes on specifications, special algorithms, and assumptions: N/A
+    * <hr> 
+    * @returns View()
+    */
     public IActionResult LeaderBoard()
     {
         ViewBag.allUsers = allUsers;
         return View();
     }   //End public IActionResult LeaderBoard()
 
+
     /**
-* Method Name: AnswerForm <br>
-* Method Purpose: Returns the view answer form for a question <br>
-* <hr>
-* Date created: Nov 26,2022 <br>
-* Date last modified: Nov 28,2022 <br>
-* <hr>
-* Notes on specifications, special algorithms, and assumptions: N/A
-* <hr> 
-* @returns View()
-*/
+    * Method Name: AnswerForm <br>
+    * Method Purpose: Returns the view answer form for a question <br>
+    * <hr>
+    * Date created: Nov 26,2022 <br>
+    * Date last modified: Nov 29,2022 <br>
+    * <hr>
+    * Notes on specifications, special algorithms, and assumptions: N/A
+    * <hr> 
+    * @returns View()
+    */
     public IActionResult AnswerForm(int taskId, bool incorrect)
     {
-        string Question = taskList[taskId].Question;
-        //return PartialView(_TaskAnswerForm, Question, incorrect);
-         
+
+         string Question = taskList[taskId].Question;
+        
+        //add functionality to call answerform partial view and
+        //check answers (call method below) as entered for each task and keep track of them
+        // ie add them to some sort of local data structure or to a table in database
+
         //(The incorrect bool tracks if they got the question wrong so
-        // a message can be displayed accordingly)
- 
-        return RedirectToAction("Index", "Hunt");
+         //a message can be displayed accordingly)
+         
+        return RedirectToAction("_TaskAnswerForm", "Shared");
     }
 
 

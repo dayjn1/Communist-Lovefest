@@ -17,7 +17,7 @@ namespace Team_3_BucHunt_WebApp.Models;
 
 /**
 * Class Name: Task <br>
-* Class Purpose: The data model for the Task object <br>
+* Class Purpose: The data model for the Task object should only reflect the corresponding table in the database<br>
 * <hr>
 * Date created: Oct 09, 2022 <br>
 * Date last modified: Nov 10, 2022 

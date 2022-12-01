@@ -6,6 +6,7 @@
 * Author’s name and email: Dante Hays, haysdc@etsu.edu
 * Creation Date: Oct 09, 2022
 * Last modified: Dante Hays haysdc@etsu.edu Nov 10, 2022
+*                Hannah Taylor taylorhm1@etsu.edu Dec 01, 2022
 * --------------------------------------------------------------------------- 
 */
 
@@ -20,11 +21,14 @@ namespace Team_3_BucHunt_WebApp.Models;
 
 /**
 * Class Name: User <br>
-* Class Purpose: The data model for the Player object<br>
+* Class Purpose: The data model for the Player object. This class and other model classes should really only
+*           contain a reflection of what is in the corresponding table in the database and minimal constructors 
+*           for an instance of the user object -- see Microsoft MVC documentation for best practices<br>
 * <hr>
 * Date created: Oct 09, 2022 <br>
 * Date last modified: Nov 10, 2022 
 * @author Dante Hays
+* @author Hannah Taylor
 */
 public class User
 {
@@ -43,37 +47,7 @@ public class User
 
     public virtual ICollection<Hunt> Hunts { get; } = new List<Hunt>();
 
-    //not needed anymore
-    //SqlCommand command;
-    //SqlDataReader dataReader;
-    ////String sql = "";
-    //string connectionString = " ";
-
-    //public List<User> usersList = new List<User>(); //Individual person list
-
-    //public List<User> teamList = new List<User>(); //Team list
-
-
-    // <summary>
-    // Method to open and establish connection to the database
-    // Will generate a list of Users stored on the database
-    // </summary>
-    //public void OpenDB()
-    //{
-    //    connectionString = @"Server=FALL22-4250-1-3; Database=BucHunt; User Id=dbaccess; Password=Password1!";
-    //    using (SqlConnection connection = new SqlConnection(connectionString))
-    //    {
-    //        connection.Open();
-    //        sql = "SELECT * FROM [BucHunt].[dbo].[Users]";
-    //        command = new SqlCommand(sql, connection);
-    //        dataReader = command.ExecuteReader();
-    //        while (dataReader.Read())
-    //        {
-    //            User user = new User(dataReader.GetInt32(0), dataReader.GetString(1), dataReader.GetString(2), dataReader.GetString(3), dataReader.GetInt32(4));
-    //            usersList.Add(user);
-    //        }
-    //    }
-    //}
+    
 
 
     /// <summary>

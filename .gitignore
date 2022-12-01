@@ -35,11 +35,17 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Other #
+#####################
 Team 3 BucHunt/.vs/Team_3_BucHunt_WebApp/v17/.suo
 *.pdb
 *.cache
 *.vsidx
-*.editorconfig
-Team 3 BucHunt/.vs/Team_3_BucHunt_WebApp/DesignTimeBuild/.dtbcache.v2
-*.2
-*.2
+*.json
+Team 3 BucHunt/Team_3_BucHunt_WebApp/obj/Debug/net6.0/apphost
+*.sentinel
+*.props
+*.targets
+Team 3 BucHunt/Team_3_BucHunt_WebApp/Team_3_BucHunt_WebApp.csproj
+Team 3 BucHunt/Team_3_BucHunt_WebApp/obj/Debug/net6.0/Team_3_BucHunt_WebApp.csproj.FileListAbsolute.txt
