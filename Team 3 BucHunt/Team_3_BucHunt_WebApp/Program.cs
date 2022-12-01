@@ -16,7 +16,7 @@ NotificationService ns = new NotificationService();
 
 
 var builder = WebApplication.CreateBuilder(args);
-var connString = builder.Configuration.GetConnectionString("DefaultConnection");
+var connString = builder.Configuration.GetConnectionString("DefaultConnection"); //call the connection string
 // Add services to the container.
 
 builder.Services.AddDistributedMemoryCache();
@@ -28,7 +28,7 @@ builder.Services.AddSession(options =>
     options.Cookie.IsEssential = true;
 });
 
-
+//initialize services for the controllers and database context
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<BucHuntContext>(options =>
 {
