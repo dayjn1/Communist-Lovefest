@@ -1,22 +1,36 @@
 ﻿@{
-    /**
-            * ---------------------------------------------------------------------------
-            * File name: Index.cs
-            * Project name: 404 Industries BucHunt
-            * ---------------------------------------------------------------------------
-            * Author’s name and email: Dante Hays, haysdc@etsu.edu
-            * Creation Date: Oct 27, 2022
-            * Last modified: Dante Hays haysdc@etsu.edu Nov 02, 2022
-            * ---------------------------------------------------------------------------
+/**
+* ---------------------------------------------------------------------------
+* File name: Index.cs
+* Project name: 404 Industries BucHunt
+* ---------------------------------------------------------------------------
+* Author’s name and email: Dante Hays, haysdc@etsu.edu
+* Creation Date: Oct 27, 2022
+* Last modified: Dante Hays haysdc@etsu.edu Nov 28, 2022
+* ---------------------------------------------------------------------------
 */
 }
 
 @model string
 <div class="text-center"><!--The main div for the Hunt page-->
-    <h3> @Model </h3>
     <body>
             @{ Html.RenderPartial("_NavBar");}
-            @{ Html.RenderPartial("_TaskList");}
-        </body>
+    </body>
+    <h3> Welcome @Model !</h3>
+    @if ((string)TempData["Message"] == "Incorrect Answer")
+    {
+            <div class="text-danger">
+                <strong>Incorrect Answer</strong>
+            </div>
+    }
+    @if ((string)TempData["Message"] == "Correct!")
+    {
+            <div class="text-success">
+                    <strong>Correct!</strong>
+                </div>
+    }
+    <body>
+            @{ Html.RenderPartial("_TaskList"); }
+    </body>
 
 </div><!--End main div for the Hunt page-->

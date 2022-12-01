@@ -1,4 +1,16 @@
-﻿@using System;
+﻿@{
+/**
+* ---------------------------------------------------------------------------
+* File name: _TaskList.cshtml
+* Project name: 404 Industries BucHunt
+* ---------------------------------------------------------------------------
+* Author’s name and email: Dante Hays, haysdc@etsu.edu
+* Creation Date: Nov 20, 2022
+* Last modified: Dante Hays haysdc@etsu.edu Nov 28, 2022
+* ---------------------------------------------------------------------------
+*/
+}
+@using System;
 @using System.Collections.Generic;
 @using System.Data.SqlClient;
 @using Team_3_BucHunt_WebApp.Models;
@@ -29,9 +41,13 @@
         if (task.LocationId == ViewBag.locations[i].LocationId)
         {
             string locationName = ViewBag.locations[i].Name;
+            Team_3_BucHunt_WebApp.Models.Task temp = new Team_3_BucHunt_WebApp.Models.Task(task.TaskId, task.LocationId, task.Question, null);
 
-            <dt><a style="font-family:Norwester" id=@Html.Raw(task.TaskId) href="">@locationName</a></dt>
-            <dd style="font-family:Norwester"> @Html.Raw(task.Question)</dd>
+            <h2 style="font-family:Norwester"> @Html.Raw(locationName)</h2>
+            Html.RenderPartial("_TaskAnswerForm", temp);
+
+            //<dt><a style="font-family:Norwester" id=@Html.Raw(task.TaskId) href=@{Html.RenderPartial("_TaskAnswerForm", (Team_3_BucHunt_WebApp.Models.Task)task);}>@locationName</a></dt>
+            //<dd style="font-family:Norwester"> @Html.Raw(task.Question)</dd>
             <br>
         }
         i++;

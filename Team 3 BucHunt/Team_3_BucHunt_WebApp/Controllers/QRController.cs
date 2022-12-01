@@ -100,5 +100,6 @@ namespace Team_3_BucHunt_WebApp.Controllers
                 return ms.ToArray();
             }//end using
         }//end BitmapToByteArray(Bitmap)
+        
     }//end BitmapExtension
 }//end Team_3_BucHunt_WebApp.Controllers
