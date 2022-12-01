@@ -32,10 +32,8 @@ public class User
 
     public string Email { get; set; } = null!;
 
-    
     public string PhoneNum { get; set; } = null!; //char
 
-    
     [Required(ErrorMessage = "AccessCode is Required"), MaxLength(8)]
     public string AccessCode { get; set; }
 

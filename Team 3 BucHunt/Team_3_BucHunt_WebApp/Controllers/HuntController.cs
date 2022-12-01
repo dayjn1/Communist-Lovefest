@@ -124,14 +124,15 @@ public class HuntController : Controller
 * Method Purpose: Returns the view of the Hunt page <br>
 * <hr>
 * Date created: Nov 15, 2022 <br>
-* Date last modified: Nov 15, 2022 <br>
+* Date last modified: Nov 29, 2022 <br>
 * <hr>
 * Notes on specifications, special algorithms, and assumptions: N/A
 * <hr> 
 * @returns View()
 */
     public IActionResult LeaderBoard()
-    { 
+    {
+        ViewBag.allUsers = allUsers;
         return View();
     }   //End public IActionResult LeaderBoard()
 

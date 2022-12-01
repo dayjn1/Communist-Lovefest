@@ -1,0 +1,53 @@
+﻿@{
+/**
+* ---------------------------------------------------------------------------
+* File name: _Leaderboard.cshtml
+* Project name: 404 Industries BucHunt
+* ---------------------------------------------------------------------------
+* Author’s name and email: Calen Cummings, cummingscc@etsu.edu
+* Creation Date: Nov 29, 2022
+* Last modified: Calen Cummings cummingscc@etsu.edu Nov 29, 2022
+* ---------------------------------------------------------------------------
+*/
+/*READ ME: This populates the leaderboard table by number of users in the Hunt */
+}
+
+@using System;
+@using System.Collections.Generic;
+@using System.Data.SqlClient;
+@using Team_3_BucHunt_WebApp.Models;
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="ETSUStyle.css">
+    <link rel="stylesheet" href="ETSU.css">
+    <meta http-equiv="refresh" content="5"> <!-- automatically refreshes the page every 5 seconds -->
+</head>
+
+<body>
+    @{
+        int i = 1; // holds the Rank value of the row for the table
+    }
+
+   <!-- The foreach loop will build the table from the list of Users in the Hunt -->
+
+    @foreach (var user in ViewBag.allUsers)
+    {
+        <tr style="border: 2px solid black;">
+            <td style="border: 2px solid black;">
+                @i
+            </td>
+            <td style="border: 2px solid black;">
+                @Html.Raw(user.Email)
+            </td>
+            <td style="border: 2px solid black;">
+            </td>
+        </tr>
+
+        i++;
+    } <!-- End foreach(var user in ViewBag.allUsers) -->
+</body>
+</html>
