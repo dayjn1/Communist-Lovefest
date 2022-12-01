@@ -46,3 +46,8 @@
         }     
     </body>
 </div> 
+
+add this button to the index page.
+<input type="submit"
+       value="Edit Profile"
+       onclick="location.href='@Url.Action("Profile", "Home")'" />
