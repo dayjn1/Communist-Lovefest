@@ -179,6 +179,8 @@ multiple terms then each term begins with an UPPERCASE letter.
 * Advanced settings of one of the DEV website below.
 
 <img src="/ReadMeSupport/AdvancedSettings.png" width=75% height=75%>  
+
+* For this iteration to connect to website use 151.141.91.45 click [here](http://151.141.91.45/) to go to website
   
 # Web Page Design
 >The diagram below illustrates the BucHunt web page basic layout and flow.
