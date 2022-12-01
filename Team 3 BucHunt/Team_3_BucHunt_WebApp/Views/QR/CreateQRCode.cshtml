@@ -1,0 +1,50 @@
+﻿@{
+/**
+* ---------------------------------------------------------------------------
+* File name CreateQRCode.cshtml
+* Project name: 404 Industries BucHunt
+* ---------------------------------------------------------------------------
+* Author’s name and email: Janine Day, dayjn1@etsu.edu
+* Creation Date: Nov 16, 2022
+* Last modified: Janine Day, dayjn1@etsu.edu, Nov 17, 2022
+* ---------------------------------------------------------------------------
+*/
+}
+
+@model Team_3_BucHunt_WebApp.Models.QRCodeModel
+
+@{
+    ViewData["Title"] = "CreateQRCode";
+}
+
+<h1>CreateQRCode</h1>
+
+<h4>QRCodeModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="CreateQRCode">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="QRCodeText" class="control-label"></label>
+                <input asp-for="QRCodeText" class="form-control" />
+                <span asp-validation-for="QRCodeText" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Generate QR Code" class="btn btn-primary text-center" />
+            </div>
+            <div class="form-group">
+
+                <img src="@ViewBag.QrCodeUri" class="img-thumbnail" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div style="padding-bottom: 30px">
+    <a asp-controller="Home" asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

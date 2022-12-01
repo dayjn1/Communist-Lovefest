@@ -1,18 +1,85 @@
-﻿html {
-  font-size: 14px;
+﻿/**
+* ---------------------------------------------------------------------------
+* File name: site.css
+* Project name: 404 Industries BucHunt
+* ---------------------------------------------------------------------------
+* Author’s name and email: East Tennessee State University
+* Creation Date: Nov 01, 2022
+* Last modified: Dante Hays haysdc@etsu.edu Nov 01, 2022
+* ---------------------------------------------------------------------------
+*/
+
+html {
+    font-size: 14px;
+    padding-bottom: 60px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+        padding-bottom: 60px;
+    }
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
+    padding-bottom:60px;
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+}
+
+.nav-doodad {
+    font-family: Norwester;
+    font-size: 40px;
+}
+
+.nav-top-page {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+}
+
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    padding-bottom: 60px;
+}
+
+.page-wrap {
+    min-height: 100%;
+    /* equal to footer height */
+    margin-bottom: -30px;
+}
+
+    .page-wrap:after {
+        content: "";
+        display: block;
+        margin-bottom: -30px;
+    }
+
+    .site-footer {
+        height: 30px;
+        position: fixed;
+        object-position: bottom;
+        padding-top: 2px;
+        scroll-behavior:unset;
+        
+        bottom: 0;
+    }
+
+.site-footer {
+    background: #041e42;
+    text-align-center;
+    color: #ffc82e;
+    width: 100%;
 }

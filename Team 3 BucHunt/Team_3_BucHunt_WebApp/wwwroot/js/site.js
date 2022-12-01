@@ -1,5 +1,11 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
-
-// Write your JavaScript code.
+﻿/**
+* ---------------------------------------------------------------------------
+* File name:
+* Project name: 404 Industries BucHunt
+* ---------------------------------------------------------------------------
+* Author’s name and email: East Tennessee State University
+* Creation Date: Oct 27, 2022
+* Last modified: Dante Hays haysdc@etsu.edu Nov 02, 2022
+* ---------------------------------------------------------------------------
+*/
 

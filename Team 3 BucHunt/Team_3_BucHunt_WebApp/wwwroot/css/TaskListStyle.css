@@ -1,0 +1,67 @@
+@{
+/**
+* ---------------------------------------------------------------------------
+* File name: TaskListStyle.css
+* Project name: 404 Industries BucHunt
+* ---------------------------------------------------------------------------
+* Author’s name and email: Alex Byars, byarss1@etsu.edu
+* Creation Date: Nov 20, 2022
+* Last modified: Dante Hays haysdc@etsu.edu Nov 28, 2022
+* ---------------------------------------------------------------------------
+*/
+
+body {
+    font-family: Norwester;
+    overflow-x: hidden;
+}
+
+h1 {
+    position: relative;
+    left: 6.5em;
+    top: -3.5em;
+    color: #041e42;
+    font-size: 3em;
+    font-weight: 200;
+}
+
+#etsumap {
+    position: absolute;
+    top: 9.375em;
+    left: 44.4em;
+    padding-bottom:150px;
+}
+
+#headerBkgd__goldWaves {
+    position: relative;
+    left: -0.5em;
+    top: -0.5em;
+    z-index: -1;
+    width: 100%;
+}
+
+dt {
+    position: relative;
+    top: -9em;
+    font-size: x-large;
+    color: #041e42;
+}
+
+dd {
+    position: relative;
+    top: -12em;
+    font-size: large;
+    color: #041e42;
+}
+
+a {
+    color: #041e42;
+}
+
+#map {
+    position: relative;
+    top: -4.75em;
+    left: 59.75em;
+    font-size: large;
+    color: #041e42;
+    padding-bottom: 200px;
+}
