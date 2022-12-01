@@ -134,7 +134,8 @@ public class HuntController : Controller
     * @returns View()
     */
     public IActionResult LeaderBoard()
-    { 
+    {
+        ViewBag.allUsers = allUsers;
         return View();
     }   //End public IActionResult LeaderBoard()
 
@@ -177,27 +178,30 @@ public class HuntController : Controller
     * <hr> 
     * @returns View()
 */
-    public IActionResult CheckAnswer(int taskId, string answer)
-    {
-        //PSEUDO CODE -- this code has not been tested
-        /*
-         * correctAnswer = tasksList[TaskId].Answer;
-         * 
-         * if ( answer == correctAnswer)
-         * { 
-         * 
-         * either pull the task from the list so they can answer again
-         * or pass a var to make it inaccessible
-         * 
-         * return RedirectToAction("Index", "Hunt");
-         * }
-         * else
-         * {
-         * return RedirectToAction("AnswerForm","Hunt", incorrect)
-         * }
-         * 
-         */
-        return RedirectToAction("Index", "Hunt");
+    public IActionResult CheckAnswer(Team_3_BucHunt_WebApp.Models.Task task)
+    {       
+        string correctAnswer = "";
+
+        foreach(var t in taskList)
+        {
+            if (t.TaskId == task.TaskId)
+                correctAnswer = t.Answer;
+        }
+
+        // either pull the task from the list so they can answer again
+        // or pass a var to make it inaccessible
+        if (task.Answer == correctAnswer)
+        {
+            TempData["Message"] = "Correct!";
+            return RedirectToAction("Index", "Hunt");
+        }
+        else
+        {
+            //return RedirectToAction("AnswerForm", "Hunt", false);
+            TempData["Message"] = "Incorrect Answer";
+            return RedirectToAction("Index", "Hunt");
+        }
+        
     }
 
 } //End public class HuntController : Controller

@@ -33,8 +33,6 @@ public partial class Task
 
     public string? Answer { get; set; }
 
-    
-
     /// <summary>
     /// Base constructor for Task class
     /// </summary>

@@ -36,10 +36,8 @@ public class User
 
     public string Email { get; set; } = null!;
 
-    
     public string PhoneNum { get; set; } = null!; //char
 
-    
     [Required(ErrorMessage = "AccessCode is Required"), MaxLength(8)]
     public string AccessCode { get; set; }
 
@@ -82,9 +80,4 @@ public class User
         HuntId = huntId;
     }
 
-
-    //public List<User> GetList()
-    //{
-    //    return usersList;
-    //}
 } //End public partial class User
