@@ -282,7 +282,7 @@ multiple terms then each term begins with an UPPERCASE letter.
 
 [Entity Framework Core](https://www.entityframeworktutorial.net/efcore/create-model-for-existing-database-in-ef-core.aspx)
 
-[QR Code Optional Read](https://www.reddit.com/r/programming/comments/yyrsjr/the_basics_of_how_qr_codes_work/?utm_source=share&utm_medium=ios_app&utm_name=iossmf)
+[QR Code Optional Read (Some PG-13 language)](https://www.reddit.com/r/programming/comments/yyrsjr/the_basics_of_how_qr_codes_work/?utm_source=share&utm_medium=ios_app&utm_name=iossmf)
 
 [HTTP Error 500.19 Services](https://learn.microsoft.com/en-us/troubleshoot/developer/webapps/iis/health-diagnostic-performance/http-error-500-19-webpage)
 
